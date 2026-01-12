@@ -406,6 +406,7 @@ html {
     ),
     rgba(241, 242, 246, 0.04);
   padding: 2.5rem;
+  position: relative;
 }
 
 .spotify-meta {
@@ -414,6 +415,55 @@ html {
   justify-content: space-between;
   gap: 2rem;
   flex-wrap: wrap;
+}
+
+.spotify-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 1.75rem;
+  background: rgba(12, 15, 20, 0.78);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  text-align: center;
+  padding: 2rem;
+  backdrop-filter: blur(4px);
+  color: rgba(241, 242, 246, 0.85);
+  z-index: 2;
+}
+
+.spotify-overlay p {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.8rem;
+}
+
+.spotify-overlay span {
+  font-size: 0.9rem;
+  color: rgba(241, 242, 246, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.spotify-dismiss {
+  margin-top: 0.8rem;
+  border: 1px solid rgba(241, 242, 246, 0.35);
+  border-radius: 999px;
+  padding: 0.5rem 1.4rem;
+  background: transparent;
+  color: rgba(241, 242, 246, 0.85);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.spotify-dismiss:hover {
+  border-color: rgba(255, 107, 74, 0.6);
+  color: rgba(241, 242, 246, 1);
+  transform: translateY(-1px);
 }
 
 .spotify-label {

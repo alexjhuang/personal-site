@@ -145,6 +145,7 @@ function Home() {
   const [sortOrder, setSortOrder] = useState("latest");
   const [metrics, setMetrics] = useState({ views: {} });
   const [spotifyActive, setSpotifyActive] = useState(true);
+  const [showSpotifyOverlay, setShowSpotifyOverlay] = useState(true);
 
   useEffect(() => {
     let frame = 0;
@@ -590,6 +591,19 @@ function Home() {
             <p className="section-header text-fog/60">Spotify</p>
           </div>
           <div className={`spotify-card ${spotifyActive ? "" : "is-paused"}`}>
+            {showSpotifyOverlay && (
+              <div className="spotify-overlay">
+                <p>Spotify integrations are temporarily on hold.</p>
+                <span>Back soon.</span>
+                <button
+                  className="spotify-dismiss"
+                  type="button"
+                  onClick={() => setShowSpotifyOverlay(false)}
+                >
+                  Dismiss
+                </button>
+              </div>
+            )}
             <div className="spotify-meta">
               <div>
                 <p className="spotify-label">Listening today</p>
