@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import SiteHeader from "../components/SiteHeader.jsx";
 import { blogIndex } from "../lib/blogs.js";
@@ -5,6 +6,18 @@ import { blogIndex } from "../lib/blogs.js";
 function BlogPost() {
   const { slug } = useParams();
   const post = blogIndex[slug];
+  const metricsEndpoint = import.meta.env.VITE_METRICS_ENDPOINT;
+  const [viewCount, setViewCount] = useState(null);
+
+  useEffect(() => {
+    if (!slug || !metricsEndpoint) return;
+    const url = new URL(metricsEndpoint);
+    url.searchParams.set("slug", slug);
+    fetch(url.toString(), { method: "POST", keepalive: true })
+      .then((response) => response.json())
+      .then((data) => setViewCount(data.views))
+      .catch(() => {});
+  }, [slug, metricsEndpoint]);
 
   if (!post) {
     return (
@@ -40,6 +53,9 @@ function BlogPost() {
               <span key={tag}>{tag}</span>
             ))}
           </div>
+          {viewCount !== null && (
+            <span className="blog-views">{viewCount.toLocaleString()} views</span>
+          )}
         </div>
         <h1 className="blog-title">{post.title}</h1>
         <p className="blog-excerpt">{post.excerpt}</p>

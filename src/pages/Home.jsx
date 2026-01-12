@@ -483,70 +483,15 @@ function Home() {
       >
         <div className="space-y-6">
           <p className="section-header text-fog/60">Blogs</p>
-          <div className="space-y-5">
-            {featuredBlogs.map((blog) => (
-              <Link
-                key={blog.slug}
-                className="blog-banner"
-                style={{ backgroundImage: `url(${blog.cover})` }}
-                to={`/blog/${blog.slug}`}
-              >
-                <div className="blog-overlay" />
-                <div className="blog-content">
-                  <h3>{blog.title}</h3>
-                  <div className="blog-tags">
-                    {blog.tags.map((tag) => (
-                      <span key={tag}>{tag}</span>
-                    ))}
-                  </div>
-                </div>
-                <span className="blog-fire" aria-hidden="true">
-                  🔥
-                </span>
-              </Link>
-            ))}
-          </div>
-          <button
-            className="blog-toggle"
-            type="button"
-            onClick={() => setShowMoreBlogs((prev) => !prev)}
-          >
-            {showMoreBlogs ? "Show less" : "Show more"}
-          </button>
-          {showMoreBlogs && (
-            <div className="space-y-6">
-              <div className="blog-controls">
-                <div className="blog-filters">
-                  {blogTags.map((tag) => (
-                    <button
-                      key={tag}
-                      type="button"
-                      className={`blog-filter ${
-                        activeTag === tag ? "is-active" : ""
-                      }`}
-                      onClick={() => setActiveTag(tag)}
-                    >
-                      {tag}
-                    </button>
-                  ))}
-                </div>
-                <div className="blog-sort">
-                  <label htmlFor="blog-sort">Sort</label>
-                  <select
-                    id="blog-sort"
-                    value={sortOrder}
-                    onChange={(event) => setSortOrder(event.target.value)}
-                  >
-                    <option value="latest">Latest</option>
-                    <option value="oldest">Oldest</option>
-                  </select>
-                </div>
-              </div>
+          {blogsWithViews.length === 0 ? (
+            <p className="text-lg text-fog/60">Coming soon.</p>
+          ) : (
+            <>
               <div className="space-y-5">
-                {filteredMoreBlogs.map((blog) => (
+                {featuredBlogs.map((blog) => (
                   <Link
                     key={blog.slug}
-                    className="blog-banner blog-banner--alt"
+                    className="blog-banner"
                     style={{ backgroundImage: `url(${blog.cover})` }}
                     to={`/blog/${blog.slug}`}
                   >
@@ -559,10 +504,77 @@ function Home() {
                         ))}
                       </div>
                     </div>
+                    <span className="blog-fire" aria-hidden="true">
+                      🔥
+                    </span>
                   </Link>
                 ))}
               </div>
-            </div>
+              {remainingBlogs.length > 0 && (
+                <>
+                  <button
+                    className="blog-toggle"
+                    type="button"
+                    onClick={() => setShowMoreBlogs((prev) => !prev)}
+                  >
+                    {showMoreBlogs ? "Show less" : "Show more"}
+                  </button>
+                  {showMoreBlogs && (
+                    <div className="space-y-6">
+                      <div className="blog-controls">
+                        <div className="blog-filters">
+                          {blogTags.map((tag) => (
+                            <button
+                              key={tag}
+                              type="button"
+                              className={`blog-filter ${
+                                activeTag === tag ? "is-active" : ""
+                              }`}
+                              onClick={() => setActiveTag(tag)}
+                            >
+                              {tag}
+                            </button>
+                          ))}
+                        </div>
+                        <div className="blog-sort">
+                          <label htmlFor="blog-sort">Sort</label>
+                          <select
+                            id="blog-sort"
+                            value={sortOrder}
+                            onChange={(event) =>
+                              setSortOrder(event.target.value)
+                            }
+                          >
+                            <option value="latest">Latest</option>
+                            <option value="oldest">Oldest</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div className="space-y-5">
+                        {filteredMoreBlogs.map((blog) => (
+                          <Link
+                            key={blog.slug}
+                            className="blog-banner blog-banner--alt"
+                            style={{ backgroundImage: `url(${blog.cover})` }}
+                            to={`/blog/${blog.slug}`}
+                          >
+                            <div className="blog-overlay" />
+                            <div className="blog-content">
+                              <h3>{blog.title}</h3>
+                              <div className="blog-tags">
+                                {blog.tags.map((tag) => (
+                                  <span key={tag}>{tag}</span>
+                                ))}
+                              </div>
+                            </div>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </>
+              )}
+            </>
           )}
         </div>
       </section>
