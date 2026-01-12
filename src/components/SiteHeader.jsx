@@ -23,7 +23,7 @@ function SiteHeader() {
       <div className="flex items-center gap-6 text-fog/70">
         <a
           className="transition hover:text-ember"
-          href="https://github.com"
+          href="https://github.com/alexjhuang"
           aria-label="GitHub"
         >
           <svg
@@ -37,7 +37,7 @@ function SiteHeader() {
         </a>
         <a
           className="transition hover:text-ember"
-          href="https://www.linkedin.com"
+          href="https://linkedin.com/in/alexjhuang"
           aria-label="LinkedIn"
         >
           <svg
@@ -51,7 +51,7 @@ function SiteHeader() {
         </a>
         <a
           className="transition hover:text-ember"
-          href="mailto:hello@alexhuang.io"
+          href="mailto:alexjinghuang@gmail.com"
           aria-label="Email"
         >
           <svg

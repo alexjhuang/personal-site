@@ -144,6 +144,7 @@ function Home() {
   const [activeTag, setActiveTag] = useState("All");
   const [sortOrder, setSortOrder] = useState("latest");
   const [metrics, setMetrics] = useState({ views: {} });
+  const [spotifyActive, setSpotifyActive] = useState(true);
 
   useEffect(() => {
     let frame = 0;
@@ -171,6 +172,41 @@ function Home() {
       .then((response) => response.json())
       .then((data) => setMetrics(data))
       .catch(() => setMetrics({ views: {} }));
+  }, []);
+
+  useEffect(() => {
+    const elements = document.querySelectorAll("[data-reveal]");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: "0px 0px -10% 0px" }
+    );
+
+    elements.forEach((element) => observer.observe(element));
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const spotifySection = document.getElementById("spotify");
+    if (!spotifySection) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          setSpotifyActive(entry.isIntersecting);
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    observer.observe(spotifySection);
+    return () => observer.disconnect();
   }, []);
 
   const blogsWithViews = useMemo(
@@ -262,7 +298,8 @@ function Home() {
 
       <section
         id="about"
-        className="mx-auto w-full max-w-6xl px-8 pb-32 pt-16 text-left"
+        className="mx-auto w-full max-w-6xl px-8 pb-32 pt-16 text-left reveal"
+        data-reveal
       >
         <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-center">
           <div className="space-y-5">
@@ -316,7 +353,8 @@ function Home() {
 
       <section
         id="experience"
-        className="mx-auto w-full max-w-6xl px-8 pb-32 text-left"
+        className="mx-auto w-full max-w-6xl px-8 pb-32 text-left reveal"
+        data-reveal
       >
         <div className="space-y-8">
           <p className="section-header text-fog/60">Experience</p>
@@ -359,7 +397,8 @@ function Home() {
 
       <section
         id="education"
-        className="mx-auto w-full max-w-6xl px-8 pb-32 text-left"
+        className="mx-auto w-full max-w-6xl px-8 pb-32 text-left reveal"
+        data-reveal
       >
         <div className="space-y-8">
           <p className="section-header text-fog/60">Education</p>
@@ -439,7 +478,8 @@ function Home() {
 
       <section
         id="blogs"
-        className="mx-auto w-full max-w-6xl px-8 pb-32 text-left"
+        className="mx-auto w-full max-w-6xl px-8 pb-32 text-left reveal"
+        data-reveal
       >
         <div className="space-y-6">
           <p className="section-header text-fog/60">Blogs</p>
@@ -529,14 +569,15 @@ function Home() {
 
       <section
         id="spotify"
-        className="mx-auto w-full max-w-6xl px-8 pb-36 text-left"
+        className="mx-auto w-full max-w-6xl px-8 pb-36 text-left reveal"
+        data-reveal
       >
         <div className="space-y-6">
           <div className="flex items-center gap-3">
             <span className="spotify-dot" />
             <p className="section-header text-fog/60">Spotify</p>
           </div>
-          <div className="spotify-card">
+          <div className={`spotify-card ${spotifyActive ? "" : "is-paused"}`}>
             <div className="spotify-meta">
               <div>
                 <p className="spotify-label">Listening today</p>
