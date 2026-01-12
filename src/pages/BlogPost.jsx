@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import SiteFooter from "../components/SiteFooter.jsx";
 import SiteHeader from "../components/SiteHeader.jsx";
 import { blogIndex } from "../lib/blogs.js";
 
@@ -64,6 +65,7 @@ function BlogPost() {
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
       </main>
+      <SiteFooter />
     </div>
   );
 }

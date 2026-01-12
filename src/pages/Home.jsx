@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
+import SiteFooter from "../components/SiteFooter.jsx";
 import SiteHeader from "../components/SiteHeader.jsx";
 import { blogs } from "../lib/blogs.js";
 
@@ -690,6 +691,8 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <SiteFooter />
     </div>
   );
 }

@@ -697,6 +697,16 @@ html {
   margin-top: 0.5rem;
 }
 
+.site-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5rem 2rem 2.5rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: rgba(241, 242, 246, 0.45);
+}
+
 .blog-fire {
   position: relative;
   z-index: 1;

@@ -24,6 +24,7 @@ jobs:
           node-version: "20"
           cache: npm
       - run: npm ci
+      - run: node scripts/update-last-updated.mjs
       - run: npm run build
         env:
           VITE_METRICS_ENDPOINT: ${{ secrets.VITE_METRICS_ENDPOINT }}
