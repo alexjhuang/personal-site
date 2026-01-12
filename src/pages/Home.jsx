@@ -308,8 +308,7 @@ function Home() {
             <div className="space-y-4 text-lg text-fog/70">
               <p>
                 I enjoy building highly performant and scalable systems
-                particularly for ML workloads. My focus sits at the intersection
-                of ML infrastructure and product experience.
+                particularly for ML workloads. I've had the privilege of working with some of the brightest and most talented people in the space on everything from <br /> Kubernetes &rarr; Compilers &rarr; Kernels.
               </p>
               <p>
                 I like scrappy environments where teams move fast and iterate
@@ -326,7 +325,10 @@ function Home() {
                   Basketball
                 </span>
                 <span className="rounded-full border border-fog/15 px-4 py-2">
-                  Mechanical keyboards
+                  Tennis
+                </span>
+                <span className="rounded-full border border-fog/15 px-4 py-2">
+                  Reading
                 </span>
                 <span className="rounded-full border border-fog/15 px-4 py-2">
                   Traveling
@@ -334,6 +336,42 @@ function Home() {
                 <span className="rounded-full border border-fog/15 px-4 py-2">
                   Food
                 </span>
+              </div>
+            </div>
+            <div className="space-y-3 pt-3">
+              <p className="text-sm text-fog/70">
+                If you're interested in working together, feel free to reach
+                out!
+              </p>
+              <div className="flex items-center gap-4 text-fog/70">
+                <a
+                  className="transition hover:text-ember"
+                  href="https://linkedin.com/in/alexjhuang"
+                  aria-label="LinkedIn"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="h-5 w-5"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 8.98h3.96V21H3V8.98zM9.5 8.98H13v1.64h.05c.49-.92 1.7-1.89 3.5-1.89 3.75 0 4.45 2.47 4.45 5.68V21H17v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9.5V8.98z" />
+                  </svg>
+                </a>
+                <a
+                  className="transition hover:text-ember"
+                  href="mailto:alexjinghuang@gmail.com"
+                  aria-label="Email"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="h-5 w-5"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
