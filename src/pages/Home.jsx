@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
+import { Link } from "react-router-dom";
 import SiteHeader from "../components/SiteHeader.jsx";
+import { blogs } from "../lib/blogs.js";
 
 const heroText = "Software Engineer with an interest in ML Systems";
 const heroWords = heroText.split(" ");
@@ -136,59 +138,12 @@ const topTracks = [
 
 const topArtists = ["Daft Punk", "The Weeknd", "Kali Uchis", "M83", "ODESZA"];
 
-const featuredBlogs = [
-  {
-    title: "Designing for performance without losing elegance",
-    image:
-      "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1600&q=80",
-    tags: ["Systems", "Performance"],
-    date: "2025-11-18",
-  },
-  {
-    title: "Why observability is a product feature, not an afterthought",
-    image:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1600&q=80",
-    tags: ["Infrastructure", "Product"],
-    date: "2025-10-02",
-  },
-  {
-    title: "Lessons from building ML platforms at scale",
-    image:
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80",
-    tags: ["ML Systems", "Scale"],
-    date: "2025-08-09",
-  },
-];
-
-const moreBlogs = [
-  {
-    title: "Designing stable systems under rapid iteration",
-    image:
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80",
-    tags: ["Systems", "Process"],
-    date: "2025-07-21",
-  },
-  {
-    title: "How to think about GPU utilization curves",
-    image:
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=80",
-    tags: ["ML Systems", "Performance"],
-    date: "2025-06-04",
-  },
-  {
-    title: "Taming latency: a pragmatic playbook",
-    image:
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80",
-    tags: ["Infrastructure", "Latency"],
-    date: "2025-05-16",
-  },
-];
-
 function Home() {
   const [glow, setGlow] = useState({ x: 50, y: 50 });
   const [showMoreBlogs, setShowMoreBlogs] = useState(false);
   const [activeTag, setActiveTag] = useState("All");
   const [sortOrder, setSortOrder] = useState("latest");
+  const [metrics, setMetrics] = useState({ views: {} });
 
   useEffect(() => {
     let frame = 0;
@@ -211,15 +166,44 @@ function Home() {
     };
   }, []);
 
+  useEffect(() => {
+    fetch("/blog-metrics.json")
+      .then((response) => response.json())
+      .then((data) => setMetrics(data))
+      .catch(() => setMetrics({ views: {} }));
+  }, []);
+
+  const blogsWithViews = useMemo(
+    () =>
+      blogs.map((blog) => ({
+        ...blog,
+        views: metrics.views?.[blog.slug] ?? 0,
+      })),
+    [metrics]
+  );
+
+  const featuredBlogs = useMemo(() => {
+    const sorted = [...blogsWithViews].sort((a, b) => {
+      if (b.views !== a.views) return b.views - a.views;
+      return new Date(b.date) - new Date(a.date);
+    });
+    return sorted.slice(0, 3);
+  }, [blogsWithViews]);
+
+  const remainingBlogs = useMemo(() => {
+    const featuredSlugs = new Set(featuredBlogs.map((blog) => blog.slug));
+    return blogsWithViews.filter((blog) => !featuredSlugs.has(blog.slug));
+  }, [blogsWithViews, featuredBlogs]);
+
   const blogTags = useMemo(() => {
     return [
       "All",
-      ...new Set(moreBlogs.flatMap((blog) => blog.tags ?? [])),
+      ...new Set(remainingBlogs.flatMap((blog) => blog.tags ?? [])),
     ];
-  }, []);
+  }, [remainingBlogs]);
 
   const filteredMoreBlogs = useMemo(() => {
-    return moreBlogs
+    return remainingBlogs
       .filter((blog) => activeTag === "All" || blog.tags?.includes(activeTag))
       .sort((a, b) => {
         if (sortOrder === "latest") {
@@ -230,7 +214,7 @@ function Home() {
         }
         return 0;
       });
-  }, [activeTag, sortOrder]);
+  }, [remainingBlogs, activeTag, sortOrder]);
 
   return (
     <div className="min-h-screen bg-ink text-fog">
@@ -461,10 +445,11 @@ function Home() {
           <p className="section-header text-fog/60">Blogs</p>
           <div className="space-y-5">
             {featuredBlogs.map((blog) => (
-              <article
-                key={blog.title}
+              <Link
+                key={blog.slug}
                 className="blog-banner"
-                style={{ backgroundImage: `url(${blog.image})` }}
+                style={{ backgroundImage: `url(${blog.cover})` }}
+                to={`/blog/${blog.slug}`}
               >
                 <div className="blog-overlay" />
                 <div className="blog-content">
@@ -478,7 +463,7 @@ function Home() {
                 <span className="blog-fire" aria-hidden="true">
                   🔥
                 </span>
-              </article>
+              </Link>
             ))}
           </div>
           <button
@@ -519,10 +504,11 @@ function Home() {
               </div>
               <div className="space-y-5">
                 {filteredMoreBlogs.map((blog) => (
-                  <article
-                    key={blog.title}
+                  <Link
+                    key={blog.slug}
                     className="blog-banner blog-banner--alt"
-                    style={{ backgroundImage: `url(${blog.image})` }}
+                    style={{ backgroundImage: `url(${blog.cover})` }}
+                    to={`/blog/${blog.slug}`}
                   >
                     <div className="blog-overlay" />
                     <div className="blog-content">
@@ -533,7 +519,7 @@ function Home() {
                         ))}
                       </div>
                     </div>
-                  </article>
+                  </Link>
                 ))}
               </div>
             </div>

@@ -1,14 +1,14 @@
-import matter from "gray-matter";
 import { marked } from "marked";
 
 const blogFiles = import.meta.glob("/content/blog/*.md", {
-  as: "raw",
+  query: "?raw",
+  import: "default",
   eager: true,
 });
 
 export const blogs = Object.entries(blogFiles)
   .map(([path, raw]) => {
-    const { data, content } = matter(raw);
+    const { data, content } = parseFrontmatter(raw);
     const slug = data.slug || path.split("/").pop().replace(/\.md$/, "");
 
     return {
@@ -27,3 +27,49 @@ export const blogIndex = blogs.reduce((acc, blog) => {
   acc[blog.slug] = blog;
   return acc;
 }, {});
+
+function parseFrontmatter(raw) {
+  if (!raw.startsWith("---")) {
+    return { data: {}, content: raw };
+  }
+
+  const parts = raw.split("\n");
+  let index = 1;
+  const data = {};
+  let currentKey = null;
+  let tags = [];
+
+  for (; index < parts.length; index += 1) {
+    const line = parts[index];
+    if (line.trim() === "---") {
+      index += 1;
+      break;
+    }
+
+    if (line.trim().startsWith("- ") && currentKey === "tags") {
+      tags.push(line.replace("- ", "").trim());
+      continue;
+    }
+
+    const match = line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
+    if (match) {
+      const key = match[1];
+      const value = match[2].trim();
+      currentKey = key;
+      if (key === "tags") {
+        tags = [];
+      } else {
+        data[key] = value;
+      }
+    }
+  }
+
+  if (tags.length) {
+    data.tags = tags;
+  }
+
+  return {
+    data,
+    content: parts.slice(index).join("\n"),
+  };
+}
