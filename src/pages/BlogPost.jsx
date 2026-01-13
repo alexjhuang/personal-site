@@ -25,6 +25,10 @@ function BlogPost() {
   }, [slug, metricsEndpoint]);
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [slug]);
+
+  useEffect(() => {
     if (!bodyRef.current) return;
     renderMathInElement(bodyRef.current, {
       delimiters: [
