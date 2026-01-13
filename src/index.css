@@ -966,6 +966,12 @@ html {
   border: 0;
 }
 
+.blog-comments {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(241, 242, 246, 0.12);
+}
+
 .site-footer {
   display: flex;
   justify-content: flex-end;

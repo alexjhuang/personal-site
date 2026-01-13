@@ -17,6 +17,7 @@ function BlogPost() {
   const [liked, setLiked] = useState(false);
   const [copied, setCopied] = useState(false);
   const [shareOpen, setShareOpen] = useState(false);
+  const giscusRef = useRef(null);
 
   const workerBase = useMemo(() => {
     if (!metricsEndpoint) return null;
@@ -106,6 +107,29 @@ function BlogPost() {
     }));
     setToc(headings);
   }, [post]);
+
+  useEffect(() => {
+    if (!giscusRef.current) return;
+    if (giscusRef.current.hasChildNodes()) return;
+
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.crossOrigin = "anonymous";
+    script.setAttribute("data-repo", "alexjhuang/personal-site");
+    script.setAttribute("data-repo-id", "R_kgDOQ4Corw");
+    script.setAttribute("data-category", "General");
+    script.setAttribute("data-category-id", "DIC_kwDOQ4Cor84C05T4");
+    script.setAttribute("data-mapping", "pathname");
+    script.setAttribute("data-strict", "0");
+    script.setAttribute("data-reactions-enabled", "0");
+    script.setAttribute("data-emit-metadata", "0");
+    script.setAttribute("data-input-position", "bottom");
+    script.setAttribute("data-theme", "preferred_color_scheme");
+    script.setAttribute("data-lang", "en");
+
+    giscusRef.current.appendChild(script);
+  }, []);
 
   if (!post) {
     return (
@@ -219,6 +243,7 @@ function BlogPost() {
           dangerouslySetInnerHTML={{ __html: post.html }}
           ref={bodyRef}
         />
+        <div className="blog-comments" ref={giscusRef} />
       </main>
       {toc.length > 0 && (
         <nav className="blog-toc" aria-label="On this page">
