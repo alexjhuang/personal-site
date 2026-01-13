@@ -651,6 +651,10 @@ html {
   flex-wrap: wrap;
 }
 
+.blog-meta + .blog-excerpt-row {
+  margin-top: 1.25rem;
+}
+
 .blog-date {
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -697,6 +701,112 @@ html {
   margin-top: 1rem;
   font-size: 1.15rem;
   color: rgba(241, 242, 246, 0.7);
+}
+
+.blog-excerpt-row {
+  margin-top: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.blog-excerpt-row .blog-excerpt {
+  margin-top: 0;
+  flex: 1 1 360px;
+}
+
+.blog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.blog-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid rgba(241, 242, 246, 0.2);
+  border-radius: 0.75rem;
+  padding: 0.55rem 1.2rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: rgba(241, 242, 246, 0.75);
+  background: rgba(12, 15, 20, 0.35);
+  text-decoration: none;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.blog-action:hover {
+  border-color: rgba(255, 107, 74, 0.5);
+  color: rgba(241, 242, 246, 0.95);
+  transform: translateY(-1px);
+}
+
+.blog-action-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 999px;
+  background: rgba(241, 242, 246, 0.08);
+  font-size: 0.75rem;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.blog-like.is-liked {
+  border-color: rgba(255, 107, 74, 0.8);
+  color: rgba(255, 107, 74, 0.95);
+  background: rgba(255, 107, 74, 0.12);
+}
+
+.blog-like.is-liked .blog-action-icon {
+  background: rgba(255, 107, 74, 0.2);
+  color: rgba(255, 107, 74, 0.9);
+}
+
+.blog-share-menu {
+  position: relative;
+}
+
+.blog-share-panel {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.6rem);
+  min-width: 190px;
+  padding: 0.6rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(241, 242, 246, 0.15);
+  background: rgba(12, 15, 20, 0.92);
+  backdrop-filter: blur(8px);
+  display: grid;
+  gap: 0.4rem;
+  z-index: 10;
+}
+
+.blog-share-panel button,
+.blog-share-panel a {
+  border: none;
+  background: transparent;
+  color: rgba(241, 242, 246, 0.75);
+  text-align: left;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.blog-share-panel button:hover,
+.blog-share-panel a:hover {
+  background: rgba(255, 107, 74, 0.15);
+  color: rgba(241, 242, 246, 0.95);
 }
 
 .blog-body {

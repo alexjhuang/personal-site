@@ -26,6 +26,51 @@ export default {
       return Response.json({ slug, views: current + 1 }, { headers: corsHeaders });
     }
 
+    if (url.pathname === "/api/like") {
+      const slug = url.searchParams.get("slug");
+      if (!slug) {
+        return new Response("Missing slug", {
+          status: 400,
+          headers: corsHeaders,
+        });
+      }
+
+      const key = `like:${slug}`;
+      const current = Number((await env.BLOG_VIEWS.get(key)) || 0);
+      await env.BLOG_VIEWS.put(key, String(current + 1));
+      return Response.json({ slug, likes: current + 1 }, { headers: corsHeaders });
+    }
+
+    if (url.pathname === "/api/unlike") {
+      const slug = url.searchParams.get("slug");
+      if (!slug) {
+        return new Response("Missing slug", {
+          status: 400,
+          headers: corsHeaders,
+        });
+      }
+
+      const key = `like:${slug}`;
+      const current = Number((await env.BLOG_VIEWS.get(key)) || 0);
+      const next = Math.max(0, current - 1);
+      await env.BLOG_VIEWS.put(key, String(next));
+      return Response.json({ slug, likes: next }, { headers: corsHeaders });
+    }
+
+    if (url.pathname === "/api/likes") {
+      const slug = url.searchParams.get("slug");
+      if (!slug) {
+        return new Response("Missing slug", {
+          status: 400,
+          headers: corsHeaders,
+        });
+      }
+
+      const key = `like:${slug}`;
+      const current = Number((await env.BLOG_VIEWS.get(key)) || 0);
+      return Response.json({ slug, likes: current }, { headers: corsHeaders });
+    }
+
     if (url.pathname === "/api/stats") {
       const token = url.searchParams.get("token");
       if (!token || token !== env.METRICS_TOKEN) {

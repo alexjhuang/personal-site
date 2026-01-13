@@ -6,6 +6,12 @@ This worker tracks blog views and exposes a secured stats endpoint for the night
 
 - `POST /api/view?slug=your-slug`
   - Increments the view counter for a blog post.
+- `GET /api/likes?slug=your-slug`
+  - Returns `{ slug, likes }` for a blog post.
+- `POST /api/like?slug=your-slug`
+  - Increments the like counter for a blog post.
+- `POST /api/unlike?slug=your-slug`
+  - Decrements the like counter for a blog post.
 - `GET /api/stats?token=YOUR_TOKEN`
   - Returns `{ views: { slug: count } }`.
 

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import renderMathInElement from "katex/dist/contrib/auto-render";
 import "katex/dist/katex.min.css";
@@ -13,6 +13,15 @@ function BlogPost() {
   const [viewCount, setViewCount] = useState(null);
   const bodyRef = useRef(null);
   const [toc, setToc] = useState([]);
+  const [likes, setLikes] = useState(0);
+  const [liked, setLiked] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const [shareOpen, setShareOpen] = useState(false);
+
+  const workerBase = useMemo(() => {
+    if (!metricsEndpoint) return null;
+    return metricsEndpoint.replace(/\/api\/view$/, "");
+  }, [metricsEndpoint]);
 
   useEffect(() => {
     if (!slug || !metricsEndpoint) return;
@@ -27,6 +36,52 @@ function BlogPost() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [slug]);
+
+  useEffect(() => {
+    if (!slug || !workerBase) return;
+    const url = new URL(`${workerBase}/api/likes`);
+    url.searchParams.set("slug", slug);
+    fetch(url.toString())
+      .then((response) => response.json())
+      .then((data) => setLikes(data.likes ?? 0))
+      .catch(() => {});
+
+    const stored = localStorage.getItem(`liked:${slug}`);
+    const cookieMatch = document.cookie
+      .split("; ")
+      .find((row) => row.startsWith(`liked:${slug}=`));
+    const cookieLiked = cookieMatch?.split("=")[1] === "true";
+    setLiked(stored === "true" || cookieLiked);
+  }, [slug, workerBase]);
+
+  const handleLike = () => {
+    if (!slug || !workerBase) return;
+    const nextLiked = !liked;
+    const endpoint = nextLiked ? "/api/like" : "/api/unlike";
+    const url = new URL(`${workerBase}${endpoint}`);
+    url.searchParams.set("slug", slug);
+
+    setLiked(nextLiked);
+    setLikes((prev) => Math.max(0, nextLiked ? prev + 1 : prev - 1));
+
+    localStorage.setItem(`liked:${slug}`, nextLiked ? "true" : "false");
+    document.cookie = `liked:${slug}=${nextLiked ? "true" : "false"}; max-age=31536000; path=/`;
+
+    fetch(url.toString(), { method: "POST" })
+      .then((response) => response.json())
+      .then((data) => setLikes(data.likes ?? likes))
+      .catch(() => {});
+  };
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
+  };
 
   useEffect(() => {
     if (!bodyRef.current) return;
@@ -81,6 +136,7 @@ function BlogPost() {
         <div className="blog-hero">
           <img src={post.cover} alt="" />
         </div>
+        <h1 className="blog-title">{post.title}</h1>
         <div className="blog-meta">
           <p className="blog-date">{post.date}</p>
           <div className="blog-tags blog-tags--left">
@@ -96,8 +152,68 @@ function BlogPost() {
             <span className="blog-views">{viewCount.toLocaleString()} views</span>
           )}
         </div>
-        <h1 className="blog-title">{post.title}</h1>
-        <p className="blog-excerpt">{post.excerpt}</p>
+        <div className="blog-excerpt-row">
+          <p className="blog-excerpt">{post.excerpt}</p>
+          <div className="blog-actions">
+            <button
+              className={`blog-action blog-like ${liked ? "is-liked" : ""}`}
+              type="button"
+              onClick={handleLike}
+            >
+              <span className="blog-action-icon" aria-hidden="true">
+                ♥
+              </span>
+              {liked ? "Liked" : "Like"} · {likes}
+            </button>
+            <div className="blog-share-menu">
+              <button
+                className="blog-action blog-share"
+                type="button"
+                onMouseEnter={() => setShareOpen(true)}
+                onFocus={() => setShareOpen(true)}
+                aria-expanded={shareOpen}
+                aria-haspopup="true"
+              >
+                <span className="blog-action-icon" aria-hidden="true">
+                  ↗
+                </span>
+                Share
+              </button>
+              {shareOpen && (
+                <div
+                  className="blog-share-panel"
+                  role="menu"
+                  onMouseLeave={() => setShareOpen(false)}
+                  onBlur={() => setShareOpen(false)}
+                >
+                  <button type="button" onClick={handleCopy} role="menuitem">
+                    {copied ? "Link copied" : "Copy link"}
+                  </button>
+                  <a
+                    href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+                      typeof window !== "undefined" ? window.location.href : ""
+                    )}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    role="menuitem"
+                  >
+                    Share on LinkedIn
+                  </a>
+                  <a
+                    href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
+                      typeof window !== "undefined" ? window.location.href : ""
+                    )}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    role="menuitem"
+                  >
+                    Share on X
+                  </a>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
         <article
           className="blog-body"
           dangerouslySetInnerHTML={{ __html: post.html }}
