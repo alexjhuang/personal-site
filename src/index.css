@@ -608,6 +608,10 @@ html {
   background: rgba(12, 15, 20, 0.35);
 }
 
+.blog-tags--left {
+  margin-right: auto;
+}
+
 .blog-back {
   display: inline-flex;
   align-items: center;
@@ -661,6 +665,27 @@ html {
   color: rgba(241, 242, 246, 0.55);
 }
 
+.blog-stats {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: rgba(241, 242, 246, 0.55);
+}
+
+.blog-stats span + span {
+  position: relative;
+  padding-left: 0.9rem;
+}
+
+.blog-stats span + span::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: rgba(241, 242, 246, 0.35);
+}
+
 .blog-title {
   margin-top: 1.5rem;
   font-size: 2.6rem;
@@ -679,22 +704,156 @@ html {
   color: rgba(241, 242, 246, 0.75);
   font-size: 1.05rem;
   line-height: 1.8;
+  font-family: "Source Serif 4", serif;
+  max-width: none;
+}
+
+.blog-body p + p {
+  margin-top: 1.2rem;
 }
 
 .blog-body h2 {
   margin-top: 2rem;
   margin-bottom: 0.75rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  color: rgba(241, 242, 246, 0.94);
+  letter-spacing: 0.008em;
+  padding-left: 0.75rem;
+  border-left: 3px solid rgba(255, 107, 74, 0.7);
+}
+
+.blog-body h1 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.9rem;
+  font-size: 2.15rem;
+  color: rgba(241, 242, 246, 0.98);
+  letter-spacing: 0.01em;
+  padding-left: 0.9rem;
+  border-left: 3px solid rgba(255, 107, 74, 0.8);
+}
+
+.blog-body h3 {
+  margin-top: 1.6rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.3rem;
+  color: rgba(241, 242, 246, 0.92);
+  padding-left: 0.6rem;
+  border-left: 2px solid rgba(255, 107, 74, 0.6);
+}
+
+.blog-body h4 {
+  margin-top: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.12rem;
   color: rgba(241, 242, 246, 0.9);
+  padding-left: 0.5rem;
+  border-left: 2px solid rgba(255, 107, 74, 0.5);
 }
 
 .blog-body ul {
+  list-style: disc;
   padding-left: 1.5rem;
   margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.blog-body ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .blog-body li + li {
-  margin-top: 0.5rem;
+  margin-top: 0.6rem;
+}
+
+.blog-body li::marker {
+  color: rgba(255, 107, 74, 0.55);
+}
+
+.blog-body blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 3px solid rgba(255, 107, 74, 0.6);
+  background: rgba(241, 242, 246, 0.05);
+  color: rgba(241, 242, 246, 0.75);
+  font-style: italic;
+}
+
+.blog-body hr {
+  border: 0;
+  height: 1px;
+  background: rgba(241, 242, 246, 0.15);
+  margin: 2rem 0;
+}
+
+.blog-body .sources {
+  margin-top: 2.5rem;
+  padding: 1.5rem 1.75rem;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(241, 242, 246, 0.12);
+  background: rgba(241, 242, 246, 0.04);
+}
+
+.blog-body .sources h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.blog-body .sources ul {
+  margin-top: 0.75rem;
+}
+
+.blog-body .sources a {
+  color: rgba(241, 242, 246, 0.75);
+  text-decoration: none;
+}
+
+.blog-body .sources a:hover {
+  color: rgba(255, 107, 74, 0.85);
+}
+
+.blog-body strong {
+  color: rgba(241, 242, 246, 0.9);
+  font-weight: 600;
+}
+
+.blog-body em {
+  color: rgba(241, 242, 246, 0.8);
+}
+
+.blog-body code {
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono",
+    monospace;
+  font-size: 0.95em;
+  background: rgba(241, 242, 246, 0.08);
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.35rem;
+}
+
+.blog-body figure {
+  margin: 2rem 0;
+}
+
+.blog-body figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: rgba(241, 242, 246, 0.5);
+}
+
+.video-embed {
+  width: min(700px, 100%);
+  margin: 2rem auto;
+  aspect-ratio: 16 / 9;
+}
+
+.video-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .site-footer {
@@ -706,6 +865,59 @@ html {
   letter-spacing: 0.3em;
   color: rgba(241, 242, 246, 0.45);
 }
+
+.blog-toc {
+  position: fixed;
+  left: 1.5rem;
+  top: 20%;
+  z-index: 20;
+  width: 220px;
+  padding: 1rem 1.2rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(241, 242, 246, 0.15);
+  background: rgba(12, 15, 20, 0.8);
+  backdrop-filter: blur(8px);
+}
+
+.blog-toc p {
+  margin: 0 0 0.75rem;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: rgba(241, 242, 246, 0.55);
+}
+
+.blog-toc ul {
+  margin: 0;
+  padding-left: 0.9rem;
+  list-style: none;
+}
+
+.blog-toc li + li {
+  margin-top: 0.5rem;
+}
+
+.blog-toc li.is-sub {
+  margin-left: 0.4rem;
+}
+
+.blog-toc a {
+  font-size: 0.75rem;
+  color: rgba(241, 242, 246, 0.7);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.blog-toc a:hover {
+  color: rgba(255, 107, 74, 0.85);
+}
+
+@media (max-width: 1100px) {
+  .blog-toc {
+    display: none;
+  }
+}
+
 
 .blog-fire {
   position: relative;

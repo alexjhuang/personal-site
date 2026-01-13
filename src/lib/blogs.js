@@ -1,5 +1,16 @@
 import { marked } from "marked";
 
+const renderer = new marked.Renderer();
+renderer.heading = (text, level) => {
+  const id = slugify(text);
+  return `<h${level} id="${id}">${text}</h${level}>`;
+};
+
+marked.setOptions({
+  renderer,
+  mangle: false,
+});
+
 const blogFiles = import.meta.glob("/content/blog/*.md", {
   query: "?raw",
   import: "default",
@@ -19,6 +30,7 @@ export const blogs = Object.entries(blogFiles)
       tags: data.tags || [],
       excerpt: data.excerpt || "",
       html: marked.parse(content),
+      wordCount: countWords(content),
     };
   })
   .sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -27,6 +39,23 @@ export const blogIndex = blogs.reduce((acc, blog) => {
   acc[blog.slug] = blog;
   return acc;
 }, {});
+
+function slugify(text) {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-");
+}
+
+function countWords(text) {
+  return text
+    .replace(/<[^>]*>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .split(" ")
+    .filter(Boolean).length;
+}
 
 function parseFrontmatter(raw) {
   if (!raw.startsWith("---")) {
