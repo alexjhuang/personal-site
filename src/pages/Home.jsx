@@ -4,7 +4,7 @@ import SiteFooter from "../components/SiteFooter.jsx";
 import SiteHeader from "../components/SiteHeader.jsx";
 import { blogs } from "../lib/blogs.js";
 
-const heroText = "Software Engineer with an interest in ML Systems";
+const heroText = "ML Systems";
 const heroWords = heroText.split(" ");
 
 const experiences = [
