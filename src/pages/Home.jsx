@@ -120,13 +120,13 @@ const educationItems = [
 ];
 
 const defaultSpotifyWave = [
-  { label: "Mon", energy: 0.35 },
-  { label: "Tue", energy: 0.45 },
-  { label: "Wed", energy: 0.6 },
-  { label: "Thu", energy: 0.8 },
-  { label: "Fri", energy: 0.9 },
-  { label: "Sat", energy: 0.7 },
-  { label: "Sun", energy: 0.5 },
+  { label: "Mon", energy: 0 },
+  { label: "Tue", energy: 0 },
+  { label: "Wed", energy: 0 },
+  { label: "Thu", energy: 0 },
+  { label: "Fri", energy: 0 },
+  { label: "Sat", energy: 0 },
+  { label: "Sun", energy: 0 },
 ];
 
 const defaultSpotifyData = {
@@ -666,7 +666,7 @@ function Home() {
                   <div
                     className="spotify-bar-inner"
                     style={{
-                      "--bar-height": `${24 + day.energy * 90}px`,
+                      "--bar-height": `${8 + day.energy * 106}px`,
                       "--bar-delay": `${index * 120}ms`,
                     }}
                   />

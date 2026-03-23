@@ -8,27 +8,27 @@
     },
     {
       "label": "Tue",
-      "energy": 0.2
+      "energy": 0
     },
     {
       "label": "Wed",
-      "energy": 0.2
+      "energy": 0
     },
     {
       "label": "Thu",
-      "energy": 0.2
+      "energy": 0
     },
     {
       "label": "Fri",
-      "energy": 0.2
+      "energy": 0
     },
     {
       "label": "Sat",
-      "energy": 0.2
+      "energy": 0
     },
     {
       "label": "Sun",
-      "energy": 0.2
+      "energy": 0
     }
   ],
   "topTracks90d": [

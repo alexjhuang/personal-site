@@ -38,13 +38,13 @@ function getDefaultPayload() {
     updatedAt: new Date().toISOString().slice(0, 10),
     listeningTodayMinutes: 0,
     weeklyEnergy: [
-      { label: "Mon", energy: 0.25 },
-      { label: "Tue", energy: 0.25 },
-      { label: "Wed", energy: 0.25 },
-      { label: "Thu", energy: 0.25 },
-      { label: "Fri", energy: 0.25 },
-      { label: "Sat", energy: 0.25 },
-      { label: "Sun", energy: 0.25 },
+      { label: "Mon", energy: 0 },
+      { label: "Tue", energy: 0 },
+      { label: "Wed", energy: 0 },
+      { label: "Thu", energy: 0 },
+      { label: "Fri", energy: 0 },
+      { label: "Sat", energy: 0 },
+      { label: "Sun", energy: 0 },
     ],
     topTracks90d: [],
     topArtists90d: [],
@@ -105,8 +105,19 @@ async function spotifyGet(pathname, accessToken) {
 function roundEnergyByDay(items) {
   const labels = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   const counts = [0, 0, 0, 0, 0, 0, 0];
+  const now = new Date();
+  const nowMs = now.getTime();
+  const startOfWeek = new Date(nowMs);
+  const daysSinceMonday = (startOfWeek.getUTCDay() + 6) % 7;
+  startOfWeek.setUTCHours(0, 0, 0, 0);
+  startOfWeek.setUTCDate(startOfWeek.getUTCDate() - daysSinceMonday);
+  const startMs = startOfWeek.getTime();
 
   for (const item of items) {
+    const playedAtMs = Date.parse(item.played_at);
+    if (Number.isNaN(playedAtMs) || playedAtMs < startMs || playedAtMs > nowMs) {
+      continue;
+    }
     const idx = dayIndexUtc(item.played_at);
     counts[idx] += 1;
   }
@@ -114,7 +125,7 @@ function roundEnergyByDay(items) {
   const max = Math.max(1, ...counts);
   return labels.map((label, idx) => ({
     label,
-    energy: Number((0.2 + (counts[idx] / max) * 0.8).toFixed(2)),
+    energy: counts[idx] === 0 ? 0 : Number((counts[idx] / max).toFixed(2)),
   }));
 }
 
