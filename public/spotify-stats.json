@@ -1,16 +1,84 @@
 {
   "updatedAt": "2026-03-23",
-  "listeningTodayMinutes": 0,
+  "listeningTodayMinutes": 143,
   "weeklyEnergy": [
-    { "label": "Mon", "energy": 0.25 },
-    { "label": "Tue", "energy": 0.25 },
-    { "label": "Wed", "energy": 0.25 },
-    { "label": "Thu", "energy": 0.25 },
-    { "label": "Fri", "energy": 0.25 },
-    { "label": "Sat", "energy": 0.25 },
-    { "label": "Sun", "energy": 0.25 }
+    {
+      "label": "Mon",
+      "energy": 1
+    },
+    {
+      "label": "Tue",
+      "energy": 0.2
+    },
+    {
+      "label": "Wed",
+      "energy": 0.2
+    },
+    {
+      "label": "Thu",
+      "energy": 0.2
+    },
+    {
+      "label": "Fri",
+      "energy": 0.2
+    },
+    {
+      "label": "Sat",
+      "energy": 0.2
+    },
+    {
+      "label": "Sun",
+      "energy": 0.2
+    }
   ],
-  "topTracks90d": [],
-  "topArtists90d": [],
+  "topTracks90d": [
+    {
+      "name": "Secondhand (feat. Rema)",
+      "artist": "Don Toliver, Rema",
+      "url": "https://open.spotify.com/track/4Z5KKoBGxpJo8YbDcGQXd5"
+    },
+    {
+      "name": "Pleasure’s Mine",
+      "artist": "Don Toliver",
+      "url": "https://open.spotify.com/track/19cgfclwwxsGGwaEbOn0B2"
+    },
+    {
+      "name": "TMU",
+      "artist": "Don Toliver",
+      "url": "https://open.spotify.com/track/588gFLoYJdlQ9zLSuR3IpJ"
+    },
+    {
+      "name": "ATM",
+      "artist": "Don Toliver",
+      "url": "https://open.spotify.com/track/03auLpFLdCv4HozP4pQseu"
+    },
+    {
+      "name": "Tiramisu",
+      "artist": "Don Toliver",
+      "url": "https://open.spotify.com/track/2GHKo6nrSjruvBEQbzD7Fw"
+    }
+  ],
+  "topArtists90d": [
+    {
+      "name": "Don Toliver",
+      "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
+    },
+    {
+      "name": "John Summit",
+      "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
+    },
+    {
+      "name": "RL Grime",
+      "url": "https://open.spotify.com/artist/5eIbEEQnDM8yuDVB0bimSP"
+    },
+    {
+      "name": "Snow Strippers",
+      "url": "https://open.spotify.com/artist/6TsAG8Ve1icEC8ydeHm3C8"
+    },
+    {
+      "name": "Fred again..",
+      "url": "https://open.spotify.com/artist/4oLeXFyACqeem2VImYeBFe"
+    }
+  ],
   "currentlyPlaying": null
 }
