@@ -119,7 +119,7 @@ const educationItems = [
   },
 ];
 
-const spotifyWave = [
+const defaultSpotifyWave = [
   { label: "Mon", energy: 0.35 },
   { label: "Tue", energy: 0.45 },
   { label: "Wed", energy: 0.6 },
@@ -129,15 +129,22 @@ const spotifyWave = [
   { label: "Sun", energy: 0.5 },
 ];
 
-const topTracks = [
-  "After Dark",
-  "Nights Like This",
-  "Instant Crush",
-  "Midnight City",
-  "Digital Love",
-];
+const defaultSpotifyData = {
+  updatedAt: "",
+  listeningTodayMinutes: 0,
+  weeklyEnergy: defaultSpotifyWave,
+  topTracks90d: [],
+  topArtists90d: [],
+  currentlyPlaying: null,
+};
 
-const topArtists = ["Daft Punk", "The Weeknd", "Kali Uchis", "M83", "ODESZA"];
+function formatMinutes(minutes) {
+  const safeMinutes = Math.max(0, Number(minutes || 0));
+  const hours = Math.floor(safeMinutes / 60);
+  const mins = safeMinutes % 60;
+  if (hours === 0) return `${mins}m`;
+  return `${hours}h ${String(mins).padStart(2, "0")}m`;
+}
 
 function Home() {
   const [glow, setGlow] = useState({ x: 50, y: 50 });
@@ -146,7 +153,7 @@ function Home() {
   const [sortOrder, setSortOrder] = useState("latest");
   const [metrics, setMetrics] = useState({ views: {} });
   const [spotifyActive, setSpotifyActive] = useState(true);
-  const [showSpotifyOverlay, setShowSpotifyOverlay] = useState(true);
+  const [spotifyData, setSpotifyData] = useState(defaultSpotifyData);
 
   useEffect(() => {
     let frame = 0;
@@ -174,6 +181,13 @@ function Home() {
       .then((response) => response.json())
       .then((data) => setMetrics(data))
       .catch(() => setMetrics({ views: {} }));
+  }, []);
+
+  useEffect(() => {
+    fetch("/spotify-stats.json")
+      .then((response) => response.json())
+      .then((data) => setSpotifyData({ ...defaultSpotifyData, ...data }))
+      .catch(() => setSpotifyData(defaultSpotifyData));
   }, []);
 
   useEffect(() => {
@@ -250,6 +264,12 @@ function Home() {
         return 0;
       });
   }, [remainingBlogs, activeTag, sortOrder]);
+
+  const spotifyWave = spotifyData.weeklyEnergy?.length
+    ? spotifyData.weeklyEnergy
+    : defaultSpotifyWave;
+  const topTracks = spotifyData.topTracks90d || [];
+  const topArtists = spotifyData.topArtists90d || [];
 
   return (
     <div className="min-h-screen bg-ink text-fog">
@@ -627,27 +647,17 @@ function Home() {
             <p className="section-header text-fog/60">Spotify</p>
           </div>
           <div className={`spotify-card ${spotifyActive ? "" : "is-paused"}`}>
-            {showSpotifyOverlay && (
-              <div className="spotify-overlay">
-                <p>Spotify integrations are temporarily on hold.</p>
-                <span>Back soon.</span>
-                <button
-                  className="spotify-dismiss"
-                  type="button"
-                  onClick={() => setShowSpotifyOverlay(false)}
-                >
-                  Dismiss
-                </button>
-              </div>
-            )}
             <div className="spotify-meta">
               <div>
                 <p className="spotify-label">Listening today</p>
-                <p className="spotify-value">3h 42m</p>
+                <p className="spotify-value">
+                  {formatMinutes(spotifyData.listeningTodayMinutes)}
+                </p>
               </div>
               <div className="spotify-tags">
                 <span>Top tracks</span>
                 <span>Top artists</span>
+                {spotifyData.currentlyPlaying?.name && <span>Now playing</span>}
               </div>
             </div>
             <div className="spotify-wave">
@@ -668,22 +678,33 @@ function Home() {
               <div>
                 <p>Top tracks (last 90 days)</p>
                 <ul>
-                  {topTracks.map((track) => (
-                    <li key={track}>{track}</li>
-                  ))}
+                  {topTracks.length > 0 ? (
+                    topTracks.map((track) => (
+                      <li key={`${track.name}-${track.artist}`}>
+                        {track.artist ? `${track.name} — ${track.artist}` : track.name}
+                      </li>
+                    ))
+                  ) : (
+                    <li>No listening data yet.</li>
+                  )}
                 </ul>
               </div>
               <div>
                 <p>Top artists (last 90 days)</p>
                 <ul>
-                  {topArtists.map((artist) => (
-                    <li key={artist}>{artist}</li>
-                  ))}
+                  {topArtists.length > 0 ? (
+                    topArtists.map((artist) => (
+                      <li key={artist.name}>{artist.name}</li>
+                    ))
+                  ) : (
+                    <li>No listening data yet.</li>
+                  )}
                 </ul>
               </div>
             </div>
             <p className="spotify-note">
-              Updates nightly with the latest listening stats.
+              Updates nightly with the latest listening stats
+              {spotifyData.updatedAt ? ` (last sync: ${spotifyData.updatedAt}).` : "."}
             </p>
           </div>
         </div>

@@ -6,7 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "spotify:auth-url": "node scripts/spotify-auth.mjs auth-url",
+    "spotify:exchange": "node scripts/spotify-auth.mjs exchange",
+    "spotify:bootstrap": "node scripts/spotify-auth.mjs bootstrap",
+    "spotify:update": "node scripts/update-spotify-stats.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

@@ -1,0 +1,16 @@
+{
+  "updatedAt": "2026-03-23",
+  "listeningTodayMinutes": 0,
+  "weeklyEnergy": [
+    { "label": "Mon", "energy": 0.25 },
+    { "label": "Tue", "energy": 0.25 },
+    { "label": "Wed", "energy": 0.25 },
+    { "label": "Thu", "energy": 0.25 },
+    { "label": "Fri", "energy": 0.25 },
+    { "label": "Sat", "energy": 0.25 },
+    { "label": "Sun", "energy": 0.25 }
+  ],
+  "topTracks90d": [],
+  "topArtists90d": [],
+  "currentlyPlaying": null
+}
