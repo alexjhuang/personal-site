@@ -1024,7 +1024,7 @@ html {
   justify-content: center;
   width: 3.2rem;
   padding: 0.8rem 0.35rem;
-  border-right: 1px solid rgba(241, 242, 246, 0.12);
+  border-left: 1px solid rgba(241, 242, 246, 0.12);
   background: linear-gradient(
     180deg,
     rgba(255, 107, 74, 0.16),

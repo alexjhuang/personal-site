@@ -247,9 +247,6 @@ function BlogPost() {
       </main>
       {toc.length > 0 && (
         <nav className="blog-toc" aria-label="On this page" tabIndex={0}>
-          <div className="blog-toc-tab" aria-hidden="true">
-            Sections
-          </div>
           <div className="blog-toc-panel">
             <p>On this page</p>
             <ul>
@@ -262,6 +259,9 @@ function BlogPost() {
                 </li>
               ))}
             </ul>
+          </div>
+          <div className="blog-toc-tab" aria-hidden="true">
+            Sections
           </div>
         </nav>
       )}
