@@ -246,15 +246,23 @@ function BlogPost() {
         <div className="blog-comments" ref={giscusRef} />
       </main>
       {toc.length > 0 && (
-        <nav className="blog-toc" aria-label="On this page">
-          <p>On this page</p>
-          <ul>
-            {toc.map((item) => (
-              <li key={item.id} className={item.level === "h3" ? "is-sub" : ""}>
-                <a href={`#${item.id}`}>{item.title}</a>
-              </li>
-            ))}
-          </ul>
+        <nav className="blog-toc" aria-label="On this page" tabIndex={0}>
+          <div className="blog-toc-tab" aria-hidden="true">
+            Sections
+          </div>
+          <div className="blog-toc-panel">
+            <p>On this page</p>
+            <ul>
+              {toc.map((item) => (
+                <li
+                  key={item.id}
+                  className={item.level === "h3" ? "is-sub" : ""}
+                >
+                  <a href={`#${item.id}`}>{item.title}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </nav>
       )}
       <SiteFooter />
