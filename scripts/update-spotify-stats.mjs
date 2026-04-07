@@ -46,8 +46,8 @@ function getDefaultPayload() {
       { label: "Sat", energy: 0 },
       { label: "Sun", energy: 0 },
     ],
-    topTracks90d: [],
-    topArtists90d: [],
+    topTracks: [],
+    topArtists: [],
     currentlyPlaying: null,
   };
 }
@@ -156,8 +156,8 @@ async function main() {
   const accessToken = await getAccessToken();
 
   const [topTracks, topArtists, recentlyPlayed, currentlyPlaying] = await Promise.all([
-    spotifyGet("/me/top/tracks?limit=5&time_range=medium_term", accessToken),
-    spotifyGet("/me/top/artists?limit=5&time_range=medium_term", accessToken),
+    spotifyGet("/me/top/tracks?limit=5&time_range=short_term", accessToken),
+    spotifyGet("/me/top/artists?limit=5&time_range=short_term", accessToken),
     spotifyGet("/me/player/recently-played?limit=50", accessToken),
     spotifyGet("/me/player/currently-playing", accessToken),
   ]);
@@ -168,12 +168,12 @@ async function main() {
     updatedAt: new Date().toISOString().slice(0, 10),
     listeningTodayMinutes: minutesToday(recentItems),
     weeklyEnergy: roundEnergyByDay(recentItems),
-    topTracks90d: (topTracks?.items || []).map((track) => ({
+    topTracks: (topTracks?.items || []).map((track) => ({
       name: track.name,
       artist: (track.artists || []).map((a) => a.name).join(", "),
       url: track.external_urls?.spotify || "",
     })),
-    topArtists90d: (topArtists?.items || []).map((artist) => ({
+    topArtists: (topArtists?.items || []).map((artist) => ({
       name: artist.name,
       url: artist.external_urls?.spotify || "",
     })),

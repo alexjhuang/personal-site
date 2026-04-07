@@ -133,8 +133,8 @@ const defaultSpotifyData = {
   updatedAt: "",
   listeningTodayMinutes: 0,
   weeklyEnergy: defaultSpotifyWave,
-  topTracks90d: [],
-  topArtists90d: [],
+  topTracks: [],
+  topArtists: [],
   currentlyPlaying: null,
 };
 
@@ -268,8 +268,8 @@ function Home() {
   const spotifyWave = spotifyData.weeklyEnergy?.length
     ? spotifyData.weeklyEnergy
     : defaultSpotifyWave;
-  const topTracks = spotifyData.topTracks90d || [];
-  const topArtists = spotifyData.topArtists90d || [];
+  const topTracks = spotifyData.topTracks || [];
+  const topArtists = spotifyData.topArtists || [];
 
   return (
     <div className="min-h-screen bg-ink text-fog">

@@ -31,7 +31,7 @@
       "energy": 0
     }
   ],
-  "topTracks90d": [
+  "topTracks": [
     {
       "name": "Pleasure’s Mine",
       "artist": "Don Toliver",
@@ -58,7 +58,7 @@
       "url": "https://open.spotify.com/track/2GHKo6nrSjruvBEQbzD7Fw"
     }
   ],
-  "topArtists90d": [
+  "topArtists": [
     {
       "name": "Don Toliver",
       "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
