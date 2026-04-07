@@ -676,7 +676,7 @@ function Home() {
             </div>
             <div className="spotify-lists">
               <div>
-                <p>Top tracks (last 90 days)</p>
+                <p>Top tracks (last 4 weeks)</p>
                 <ul>
                   {topTracks.length > 0 ? (
                     topTracks.map((track) => (
@@ -690,7 +690,7 @@ function Home() {
                 </ul>
               </div>
               <div>
-                <p>Top artists (last 90 days)</p>
+                <p>Top artists (last 4 weeks)</p>
                 <ul>
                   {topArtists.length > 0 ? (
                     topArtists.map((artist) => (
