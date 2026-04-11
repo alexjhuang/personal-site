@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-10",
-  "listeningTodayMinutes": 97,
+  "updatedAt": "2026-04-11",
+  "listeningTodayMinutes": 30,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -8,11 +8,11 @@
     },
     {
       "label": "Tue",
-      "energy": 0.16
+      "energy": 0
     },
     {
       "label": "Wed",
-      "energy": 0.38
+      "energy": 0.28
     },
     {
       "label": "Thu",
@@ -20,11 +20,11 @@
     },
     {
       "label": "Fri",
-      "energy": 0.03
+      "energy": 0.19
     },
     {
       "label": "Sat",
-      "energy": 0
+      "energy": 0.09
     },
     {
       "label": "Sun",
@@ -32,11 +32,6 @@
     }
   ],
   "topTracks": [
-    {
-      "name": "Desire",
-      "artist": "Ian Asher, Olly Alexander (Years & Years)",
-      "url": "https://open.spotify.com/track/4sMR8fuTzbUyzB0asxifV0"
-    },
     {
       "name": "Lights Burn Dimmer",
       "artist": "Fred again.., Jamie T",
@@ -46,6 +41,11 @@
       "name": "Jenny (I Wanna Ruin Our Friendship)",
       "artist": "Ian Asher, Studio Killers",
       "url": "https://open.spotify.com/track/3Kx7gavZ1oFRnB2trqLLLM"
+    },
+    {
+      "name": "Desire",
+      "artist": "Ian Asher, Olly Alexander (Years & Years)",
+      "url": "https://open.spotify.com/track/4sMR8fuTzbUyzB0asxifV0"
     },
     {
       "name": "ALL THE TIME",
@@ -60,12 +60,12 @@
   ],
   "topArtists": [
     {
-      "name": "Don Toliver",
-      "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
-    },
-    {
       "name": "John Summit",
       "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
+    },
+    {
+      "name": "Don Toliver",
+      "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
     },
     {
       "name": "Knock2",
