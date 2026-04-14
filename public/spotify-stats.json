@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-13",
-  "listeningTodayMinutes": 155,
+  "updatedAt": "2026-04-14",
+  "listeningTodayMinutes": 145,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -8,7 +8,7 @@
     },
     {
       "label": "Tue",
-      "energy": 0
+      "energy": 0.61
     },
     {
       "label": "Wed",
@@ -33,14 +33,14 @@
   ],
   "topTracks": [
     {
-      "name": "Lights Burn Dimmer",
-      "artist": "Fred again.., Jamie T",
-      "url": "https://open.spotify.com/track/5oWijRu5zehcmNRdlO9D7o"
-    },
-    {
       "name": "Jenny (I Wanna Ruin Our Friendship)",
       "artist": "Ian Asher, Studio Killers",
       "url": "https://open.spotify.com/track/3Kx7gavZ1oFRnB2trqLLLM"
+    },
+    {
+      "name": "Lights Burn Dimmer",
+      "artist": "Fred again.., Jamie T",
+      "url": "https://open.spotify.com/track/5oWijRu5zehcmNRdlO9D7o"
     },
     {
       "name": "Desire",
@@ -60,16 +60,12 @@
   ],
   "topArtists": [
     {
-      "name": "John Summit",
-      "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
-    },
-    {
       "name": "Don Toliver",
       "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
     },
     {
-      "name": "Knock2",
-      "url": "https://open.spotify.com/artist/6mmSS7itNWKbapgG2eZbIg"
+      "name": "John Summit",
+      "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
     },
     {
       "name": "Yeat",
@@ -78,6 +74,10 @@
     {
       "name": "Tory Lanez",
       "url": "https://open.spotify.com/artist/2jku7tDXc6XoB6MO2hFuqg"
+    },
+    {
+      "name": "Kanye West",
+      "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
     }
   ],
   "currentlyPlaying": null
