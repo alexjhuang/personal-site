@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-17",
-  "listeningTodayMinutes": 62,
+  "updatedAt": "2026-04-18",
+  "listeningTodayMinutes": 39,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -8,23 +8,23 @@
     },
     {
       "label": "Tue",
-      "energy": 1
+      "energy": 0.33
     },
     {
       "label": "Wed",
-      "energy": 0.47
+      "energy": 0.43
     },
     {
       "label": "Thu",
-      "energy": 0.47
+      "energy": 0.43
     },
     {
       "label": "Fri",
-      "energy": 0.68
+      "energy": 1
     },
     {
       "label": "Sat",
-      "energy": 0
+      "energy": 0.19
     },
     {
       "label": "Sun",
@@ -50,7 +50,7 @@
     {
       "name": "ALL THE TIME",
       "artist": "John Summit, The Chainsmokers, Ilsey",
-      "url": "https://open.spotify.com/track/1V8eQfZ1zpcdA9ctIb6fY7"
+      "url": "https://open.spotify.com/track/4krcWtZK3AsVE1Jl4oqH8w"
     },
     {
       "name": "She’s Gone, Dance On",
