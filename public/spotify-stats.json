@@ -1,30 +1,30 @@
 {
-  "updatedAt": "2026-04-18",
-  "listeningTodayMinutes": 39,
+  "updatedAt": "2026-04-21",
+  "listeningTodayMinutes": 165,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 0
-    },
-    {
-      "label": "Tue",
-      "energy": 0.33
-    },
-    {
-      "label": "Wed",
-      "energy": 0.43
-    },
-    {
-      "label": "Thu",
-      "energy": 0.43
-    },
-    {
-      "label": "Fri",
       "energy": 1
     },
     {
+      "label": "Tue",
+      "energy": 0.09
+    },
+    {
+      "label": "Wed",
+      "energy": 0
+    },
+    {
+      "label": "Thu",
+      "energy": 0
+    },
+    {
+      "label": "Fri",
+      "energy": 0
+    },
+    {
       "label": "Sat",
-      "energy": 0.19
+      "energy": 0
     },
     {
       "label": "Sun",
@@ -33,19 +33,9 @@
   ],
   "topTracks": [
     {
-      "name": "Lights Burn Dimmer",
-      "artist": "Fred again.., Jamie T",
-      "url": "https://open.spotify.com/track/5oWijRu5zehcmNRdlO9D7o"
-    },
-    {
       "name": "Jenny (I Wanna Ruin Our Friendship)",
       "artist": "Ian Asher, Studio Killers",
       "url": "https://open.spotify.com/track/3Kx7gavZ1oFRnB2trqLLLM"
-    },
-    {
-      "name": "Desire",
-      "artist": "Ian Asher, Olly Alexander (Years & Years)",
-      "url": "https://open.spotify.com/track/4sMR8fuTzbUyzB0asxifV0"
     },
     {
       "name": "ALL THE TIME",
@@ -56,6 +46,16 @@
       "name": "She’s Gone, Dance On",
       "artist": "Disclosure",
       "url": "https://open.spotify.com/track/29I9dv9Nq704w0Oc5yFGsR"
+    },
+    {
+      "name": "I Just Can't Stop",
+      "artist": "Supafly, Carter Walsh, Greg Stainer",
+      "url": "https://open.spotify.com/track/56WBtFTZuHEUCa7atK2uT7"
+    },
+    {
+      "name": "Desire",
+      "artist": "Ian Asher, Olly Alexander (Years & Years)",
+      "url": "https://open.spotify.com/track/4sMR8fuTzbUyzB0asxifV0"
     }
   ],
   "topArtists": [
@@ -64,20 +64,20 @@
       "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
     },
     {
-      "name": "Don Toliver",
-      "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
-    },
-    {
       "name": "Yeat",
       "url": "https://open.spotify.com/artist/3qiHUAX7zY4Qnjx8TNUzVx"
     },
     {
-      "name": "Kanye West",
-      "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
+      "name": "Frank Ocean",
+      "url": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
     },
     {
-      "name": "Fred again..",
-      "url": "https://open.spotify.com/artist/4oLeXFyACqeem2VImYeBFe"
+      "name": "Don Toliver",
+      "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
+    },
+    {
+      "name": "Kanye West",
+      "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
     }
   ],
   "currentlyPlaying": null
