@@ -1,26 +1,26 @@
 {
-  "updatedAt": "2026-04-21",
-  "listeningTodayMinutes": 165,
+  "updatedAt": "2026-04-24",
+  "listeningTodayMinutes": 26,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 1
+      "energy": 0.3
     },
     {
       "label": "Tue",
-      "energy": 0.09
+      "energy": 0.6
     },
     {
       "label": "Wed",
-      "energy": 0
+      "energy": 1
     },
     {
       "label": "Thu",
-      "energy": 0
+      "energy": 0.45
     },
     {
       "label": "Fri",
-      "energy": 0
+      "energy": 0.15
     },
     {
       "label": "Sat",
@@ -38,11 +38,6 @@
       "url": "https://open.spotify.com/track/3Kx7gavZ1oFRnB2trqLLLM"
     },
     {
-      "name": "ALL THE TIME",
-      "artist": "John Summit, The Chainsmokers, Ilsey",
-      "url": "https://open.spotify.com/track/4krcWtZK3AsVE1Jl4oqH8w"
-    },
-    {
       "name": "She’s Gone, Dance On",
       "artist": "Disclosure",
       "url": "https://open.spotify.com/track/29I9dv9Nq704w0Oc5yFGsR"
@@ -51,6 +46,11 @@
       "name": "I Just Can't Stop",
       "artist": "Supafly, Carter Walsh, Greg Stainer",
       "url": "https://open.spotify.com/track/56WBtFTZuHEUCa7atK2uT7"
+    },
+    {
+      "name": "ALL THE TIME",
+      "artist": "John Summit, The Chainsmokers, Ilsey",
+      "url": "https://open.spotify.com/track/4krcWtZK3AsVE1Jl4oqH8w"
     },
     {
       "name": "Desire",
@@ -72,12 +72,12 @@
       "url": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
     },
     {
-      "name": "Don Toliver",
-      "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
-    },
-    {
       "name": "Kanye West",
       "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
+    },
+    {
+      "name": "Don Toliver",
+      "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
     }
   ],
   "currentlyPlaying": null
