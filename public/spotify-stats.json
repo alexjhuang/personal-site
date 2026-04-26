@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-04-25",
-  "listeningTodayMinutes": 0,
+  "updatedAt": "2026-04-26",
+  "listeningTodayMinutes": 15,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 0.3
+      "energy": 0.1
     },
     {
       "label": "Tue",
@@ -24,19 +24,14 @@
     },
     {
       "label": "Sat",
-      "energy": 0
+      "energy": 0.15
     },
     {
       "label": "Sun",
-      "energy": 0
+      "energy": 0.05
     }
   ],
   "topTracks": [
-    {
-      "name": "Jenny (I Wanna Ruin Our Friendship)",
-      "artist": "Ian Asher, Studio Killers",
-      "url": "https://open.spotify.com/track/3Kx7gavZ1oFRnB2trqLLLM"
-    },
     {
       "name": "She’s Gone, Dance On",
       "artist": "Disclosure",
@@ -48,14 +43,19 @@
       "url": "https://open.spotify.com/track/56WBtFTZuHEUCa7atK2uT7"
     },
     {
-      "name": "ALL THE TIME",
-      "artist": "John Summit, The Chainsmokers, Ilsey",
-      "url": "https://open.spotify.com/track/4krcWtZK3AsVE1Jl4oqH8w"
+      "name": "Jenny (I Wanna Ruin Our Friendship)",
+      "artist": "Ian Asher, Studio Killers",
+      "url": "https://open.spotify.com/track/3Kx7gavZ1oFRnB2trqLLLM"
     },
     {
-      "name": "Desire",
-      "artist": "Ian Asher, Olly Alexander (Years & Years)",
-      "url": "https://open.spotify.com/track/4sMR8fuTzbUyzB0asxifV0"
+      "name": "Ain't No Love In Oklahoma (From Twisters: The Album)",
+      "artist": "Luke Combs",
+      "url": "https://open.spotify.com/track/6GG4yyk3UATdBfTHVgI8PB"
+    },
+    {
+      "name": "Divine",
+      "artist": "Blair Muir",
+      "url": "https://open.spotify.com/track/3VgFcNDykoAl6Nr6ZxGfX8"
     }
   ],
   "topArtists": [
@@ -72,12 +72,12 @@
       "url": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
     },
     {
-      "name": "Kanye West",
-      "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
-    },
-    {
       "name": "Don Toliver",
       "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
+    },
+    {
+      "name": "Fred again..",
+      "url": "https://open.spotify.com/artist/4oLeXFyACqeem2VImYeBFe"
     }
   ],
   "currentlyPlaying": null
