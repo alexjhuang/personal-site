@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-27",
-  "listeningTodayMinutes": 100,
+  "updatedAt": "2026-04-28",
+  "listeningTodayMinutes": 58,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -38,9 +38,14 @@
       "url": "https://open.spotify.com/track/29I9dv9Nq704w0Oc5yFGsR"
     },
     {
-      "name": "I Just Can't Stop",
-      "artist": "Supafly, Carter Walsh, Greg Stainer",
-      "url": "https://open.spotify.com/track/56WBtFTZuHEUCa7atK2uT7"
+      "name": "I CONDEMN",
+      "artist": "The Kid LAROI",
+      "url": "https://open.spotify.com/track/0TQsdL44um3gas07wdLKt8"
+    },
+    {
+      "name": "Divine",
+      "artist": "Blair Muir",
+      "url": "https://open.spotify.com/track/3VgFcNDykoAl6Nr6ZxGfX8"
     },
     {
       "name": "Ain't No Love In Oklahoma (From Twisters: The Album)",
@@ -48,14 +53,9 @@
       "url": "https://open.spotify.com/track/6GG4yyk3UATdBfTHVgI8PB"
     },
     {
-      "name": "Jenny (I Wanna Ruin Our Friendship)",
-      "artist": "Ian Asher, Studio Killers",
-      "url": "https://open.spotify.com/track/3Kx7gavZ1oFRnB2trqLLLM"
-    },
-    {
-      "name": "Divine",
-      "artist": "Blair Muir",
-      "url": "https://open.spotify.com/track/3VgFcNDykoAl6Nr6ZxGfX8"
+      "name": "I Just Can't Stop",
+      "artist": "Supafly, Carter Walsh, Greg Stainer",
+      "url": "https://open.spotify.com/track/56WBtFTZuHEUCa7atK2uT7"
     }
   ],
   "topArtists": [
@@ -68,16 +68,16 @@
       "url": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
     },
     {
-      "name": "Don Toliver",
-      "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
+      "name": "The Kid LAROI",
+      "url": "https://open.spotify.com/artist/2tIP7SsRs7vjIcLrU85W8J"
     },
     {
       "name": "Luke Combs",
       "url": "https://open.spotify.com/artist/718COspgdWOnwOFpJHRZHS"
     },
     {
-      "name": "Fred again..",
-      "url": "https://open.spotify.com/artist/4oLeXFyACqeem2VImYeBFe"
+      "name": "¥$",
+      "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
     }
   ],
   "currentlyPlaying": null
