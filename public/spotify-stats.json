@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-28",
-  "listeningTodayMinutes": 58,
+  "updatedAt": "2026-04-29",
+  "listeningTodayMinutes": 27,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -8,11 +8,11 @@
     },
     {
       "label": "Tue",
-      "energy": 0
+      "energy": 0.21
     },
     {
       "label": "Wed",
-      "energy": 0
+      "energy": 0.03
     },
     {
       "label": "Thu",
@@ -53,15 +53,19 @@
       "url": "https://open.spotify.com/track/6GG4yyk3UATdBfTHVgI8PB"
     },
     {
-      "name": "I Just Can't Stop",
-      "artist": "Supafly, Carter Walsh, Greg Stainer",
-      "url": "https://open.spotify.com/track/56WBtFTZuHEUCa7atK2uT7"
+      "name": "Shinjuku",
+      "artist": "Franky Rizardo",
+      "url": "https://open.spotify.com/track/0niU8VMrQzSNhrmsiLlmeS"
     }
   ],
   "topArtists": [
     {
       "name": "John Summit",
       "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
+    },
+    {
+      "name": "¥$",
+      "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
     },
     {
       "name": "Frank Ocean",
@@ -74,10 +78,6 @@
     {
       "name": "Luke Combs",
       "url": "https://open.spotify.com/artist/718COspgdWOnwOFpJHRZHS"
-    },
-    {
-      "name": "¥$",
-      "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
     }
   ],
   "currentlyPlaying": null
