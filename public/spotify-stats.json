@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-02",
-  "listeningTodayMinutes": 89,
+  "updatedAt": "2026-05-03",
+  "listeningTodayMinutes": 31,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -16,7 +16,7 @@
     },
     {
       "label": "Thu",
-      "energy": 0.61
+      "energy": 0.32
     },
     {
       "label": "Fri",
@@ -24,11 +24,11 @@
     },
     {
       "label": "Sat",
-      "energy": 0
+      "energy": 0.19
     },
     {
       "label": "Sun",
-      "energy": 0
+      "energy": 0.1
     }
   ],
   "topTracks": [
@@ -68,16 +68,16 @@
       "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
     },
     {
-      "name": "Frank Ocean",
-      "url": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
-    },
-    {
       "name": "The Kid LAROI",
       "url": "https://open.spotify.com/artist/2tIP7SsRs7vjIcLrU85W8J"
     },
     {
       "name": "Luke Combs",
       "url": "https://open.spotify.com/artist/718COspgdWOnwOFpJHRZHS"
+    },
+    {
+      "name": "ZHU",
+      "url": "https://open.spotify.com/artist/28j8lBWDdDSHSSt5oPlsX2"
     }
   ],
   "currentlyPlaying": null
