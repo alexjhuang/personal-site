@@ -146,6 +146,11 @@ function formatMinutes(minutes) {
   return `${hours}h ${String(mins).padStart(2, "0")}m`;
 }
 
+function getTodayLabel() {
+  const labels = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return labels[new Date().getDay()];
+}
+
 function Home() {
   const [glow, setGlow] = useState({ x: 50, y: 50 });
   const [showMoreBlogs, setShowMoreBlogs] = useState(false);
@@ -270,6 +275,7 @@ function Home() {
     : defaultSpotifyWave;
   const topTracks = spotifyData.topTracks || [];
   const topArtists = spotifyData.topArtists || [];
+  const todayLabel = getTodayLabel();
 
   return (
     <div className="min-h-screen bg-ink text-fog">
@@ -661,18 +667,25 @@ function Home() {
               </div>
             </div>
             <div className="spotify-wave">
-              {spotifyWave.map((day, index) => (
-                <div className="spotify-bar" key={day.label}>
+              {spotifyWave.map((day, index) => {
+                const isToday = day.label === todayLabel;
+                return (
                   <div
-                    className="spotify-bar-inner"
-                    style={{
-                      "--bar-height": `${8 + day.energy * 106}px`,
-                      "--bar-delay": `${index * 120}ms`,
-                    }}
-                  />
-                  <span>{day.label}</span>
-                </div>
-              ))}
+                    className={`spotify-bar ${isToday ? "is-today" : ""}`}
+                    key={day.label}
+                    aria-label={`${day.label}${isToday ? ", today" : ""}`}
+                  >
+                    <div
+                      className="spotify-bar-inner"
+                      style={{
+                        "--bar-height": `${8 + day.energy * 106}px`,
+                        "--bar-delay": `${index * 120}ms`,
+                      }}
+                    />
+                    <span>{day.label}</span>
+                  </div>
+                );
+              })}
             </div>
             <div className="spotify-lists">
               <div>

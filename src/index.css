@@ -511,6 +511,8 @@ html {
   text-transform: uppercase;
   letter-spacing: 0.3em;
   color: rgba(241, 242, 246, 0.4);
+  position: relative;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .spotify-bar-inner {
@@ -525,6 +527,28 @@ html {
   box-shadow: 0 0 18px rgba(30, 215, 96, 0.55);
   animation: wavePulse 2.8s ease-in-out infinite;
   animation-delay: var(--bar-delay);
+}
+
+.spotify-bar.is-today {
+  color: rgba(241, 242, 246, 0.9);
+  transform: translateY(-4px);
+}
+
+.spotify-bar.is-today .spotify-bar-inner {
+  width: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 242, 166, 1),
+    rgba(30, 215, 96, 0.72) 48%,
+    rgba(30, 215, 96, 0.22)
+  );
+  box-shadow:
+    0 0 0 6px rgba(255, 242, 166, 0.08),
+    0 0 26px rgba(30, 215, 96, 0.74);
+}
+
+.spotify-bar.is-today span {
+  color: rgba(255, 242, 166, 0.95);
 }
 
 .spotify-card.is-paused .spotify-bar-inner {
