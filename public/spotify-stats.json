@@ -1,22 +1,22 @@
 {
-  "updatedAt": "2026-05-06",
-  "listeningTodayMinutes": 73,
+  "updatedAt": "2026-05-07",
+  "listeningTodayMinutes": 140,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 0.66
+      "energy": 0
     },
     {
       "label": "Tue",
-      "energy": 1
+      "energy": 0
     },
     {
       "label": "Wed",
-      "energy": 0.07
+      "energy": 1
     },
     {
       "label": "Thu",
-      "energy": 0
+      "energy": 0.61
     },
     {
       "label": "Fri",
@@ -76,13 +76,9 @@
       "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
     },
     {
-      "name": "ZHU",
-      "url": "https://open.spotify.com/artist/28j8lBWDdDSHSSt5oPlsX2"
+      "name": "Drake",
+      "url": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
     }
   ],
-  "currentlyPlaying": {
-    "name": "Overdrive (feat. Norma Jean Martine)",
-    "artist": "Ofenbach, Norma Jean Martine",
-    "url": "https://open.spotify.com/track/3bK1zVFBKIzYjmptmI4NsJ"
-  }
+  "currentlyPlaying": null
 }
