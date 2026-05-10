@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-09",
-  "listeningTodayMinutes": 80,
+  "updatedAt": "2026-05-10",
+  "listeningTodayMinutes": 38,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -16,7 +16,7 @@
     },
     {
       "label": "Thu",
-      "energy": 0.47
+      "energy": 0.12
     },
     {
       "label": "Fri",
@@ -24,11 +24,11 @@
     },
     {
       "label": "Sat",
-      "energy": 0
+      "energy": 0.15
     },
     {
       "label": "Sun",
-      "energy": 0
+      "energy": 0.21
     }
   ],
   "topTracks": [
@@ -43,19 +43,19 @@
       "url": "https://open.spotify.com/track/29I9dv9Nq704w0Oc5yFGsR"
     },
     {
-      "name": "Shinjuku",
-      "artist": "Franky Rizardo",
-      "url": "https://open.spotify.com/track/0niU8VMrQzSNhrmsiLlmeS"
+      "name": "Sign of the Times",
+      "artist": "Harry Styles",
+      "url": "https://open.spotify.com/track/5Ohxk2dO5COHF1krpoPigN"
+    },
+    {
+      "name": "DO IT",
+      "artist": "¥$, Kanye West, Ty Dolla $ign",
+      "url": "https://open.spotify.com/track/1oNaDXXu9I4UCJ8Fh0Hfjg"
     },
     {
       "name": "Divine",
       "artist": "Blair Muir",
       "url": "https://open.spotify.com/track/3VgFcNDykoAl6Nr6ZxGfX8"
-    },
-    {
-      "name": "Sign of the Times",
-      "artist": "Harry Styles",
-      "url": "https://open.spotify.com/track/5Ohxk2dO5COHF1krpoPigN"
     }
   ],
   "topArtists": [
