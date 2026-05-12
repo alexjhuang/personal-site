@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-11",
-  "listeningTodayMinutes": 67,
+  "updatedAt": "2026-05-12",
+  "listeningTodayMinutes": 97,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -8,7 +8,7 @@
     },
     {
       "label": "Tue",
-      "energy": 0
+      "energy": 0.03
     },
     {
       "label": "Wed",
@@ -53,9 +53,9 @@
       "url": "https://open.spotify.com/track/1oNaDXXu9I4UCJ8Fh0Hfjg"
     },
     {
-      "name": "Divine",
-      "artist": "Blair Muir",
-      "url": "https://open.spotify.com/track/3VgFcNDykoAl6Nr6ZxGfX8"
+      "name": "YUKON (INTERLUDE)",
+      "artist": "Joji",
+      "url": "https://open.spotify.com/track/01iMj24ADbxjoOob3TBJfq"
     }
   ],
   "topArtists": [
