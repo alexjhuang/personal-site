@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-12",
-  "listeningTodayMinutes": 97,
+  "updatedAt": "2026-05-13",
+  "listeningTodayMinutes": 71,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -8,11 +8,11 @@
     },
     {
       "label": "Tue",
-      "energy": 0.03
+      "energy": 0.42
     },
     {
       "label": "Wed",
-      "energy": 0
+      "energy": 0.19
     },
     {
       "label": "Thu",
@@ -43,11 +43,6 @@
       "url": "https://open.spotify.com/track/29I9dv9Nq704w0Oc5yFGsR"
     },
     {
-      "name": "Sign of the Times",
-      "artist": "Harry Styles",
-      "url": "https://open.spotify.com/track/5Ohxk2dO5COHF1krpoPigN"
-    },
-    {
       "name": "DO IT",
       "artist": "¥$, Kanye West, Ty Dolla $ign",
       "url": "https://open.spotify.com/track/1oNaDXXu9I4UCJ8Fh0Hfjg"
@@ -56,6 +51,11 @@
       "name": "YUKON (INTERLUDE)",
       "artist": "Joji",
       "url": "https://open.spotify.com/track/01iMj24ADbxjoOob3TBJfq"
+    },
+    {
+      "name": "PROMOTION",
+      "artist": "¥$, Kanye West, Ty Dolla $ign",
+      "url": "https://open.spotify.com/track/6bSfeCXlUaGa3eWCy5qPTb"
     }
   ],
   "topArtists": [
