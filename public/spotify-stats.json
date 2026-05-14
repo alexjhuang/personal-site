@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-13",
-  "listeningTodayMinutes": 71,
+  "updatedAt": "2026-05-14",
+  "listeningTodayMinutes": 13,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -8,11 +8,11 @@
     },
     {
       "label": "Tue",
-      "energy": 0.42
+      "energy": 0.48
     },
     {
       "label": "Wed",
-      "energy": 0.19
+      "energy": 0.37
     },
     {
       "label": "Thu",
@@ -68,16 +68,16 @@
       "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
     },
     {
-      "name": "John Summit",
-      "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
-    },
-    {
       "name": "Don Toliver",
       "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
     },
     {
       "name": "Drake",
       "url": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+    },
+    {
+      "name": "ZHU",
+      "url": "https://open.spotify.com/artist/28j8lBWDdDSHSSt5oPlsX2"
     }
   ],
   "currentlyPlaying": null
