@@ -1,22 +1,22 @@
 {
-  "updatedAt": "2026-05-15",
-  "listeningTodayMinutes": 77,
+  "updatedAt": "2026-05-16",
+  "listeningTodayMinutes": 137,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 0.12
+      "energy": 0
     },
     {
       "label": "Tue",
-      "energy": 0.76
+      "energy": 0
     },
     {
       "label": "Wed",
-      "energy": 0.59
+      "energy": 0
     },
     {
       "label": "Thu",
-      "energy": 0.47
+      "energy": 0
     },
     {
       "label": "Fri",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Sat",
-      "energy": 0
+      "energy": 0.02
     },
     {
       "label": "Sun",
@@ -80,9 +80,5 @@
       "url": "https://open.spotify.com/artist/28j8lBWDdDSHSSt5oPlsX2"
     }
   ],
-  "currentlyPlaying": {
-    "name": "(madness) !",
-    "artist": "LUCKI",
-    "url": "https://open.spotify.com/track/38Kxfn4tAgFY8R1CSW8x4v"
-  }
+  "currentlyPlaying": null
 }
