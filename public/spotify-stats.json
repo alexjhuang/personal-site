@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-05-19",
-  "listeningTodayMinutes": 67,
+  "updatedAt": "2026-05-20",
+  "listeningTodayMinutes": 69,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 1
+      "energy": 0.8
     },
     {
       "label": "Tue",
-      "energy": 0.44
+      "energy": 1
     },
     {
       "label": "Wed",
-      "energy": 0
+      "energy": 0.4
     },
     {
       "label": "Thu",
@@ -48,14 +48,14 @@
       "url": "https://open.spotify.com/track/1oNaDXXu9I4UCJ8Fh0Hfjg"
     },
     {
-      "name": "PROMOTION",
-      "artist": "¥$, Kanye West, Ty Dolla $ign",
-      "url": "https://open.spotify.com/track/6bSfeCXlUaGa3eWCy5qPTb"
-    },
-    {
       "name": "Woods",
       "artist": "Mac Miller",
       "url": "https://open.spotify.com/track/3Qa944OTMZkg8DHjET8JQv"
+    },
+    {
+      "name": "PROMOTION",
+      "artist": "¥$, Kanye West, Ty Dolla $ign",
+      "url": "https://open.spotify.com/track/6bSfeCXlUaGa3eWCy5qPTb"
     }
   ],
   "topArtists": [
