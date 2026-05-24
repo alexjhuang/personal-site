@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-23",
-  "listeningTodayMinutes": 108,
+  "updatedAt": "2026-05-24",
+  "listeningTodayMinutes": 112,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -12,23 +12,23 @@
     },
     {
       "label": "Wed",
-      "energy": 0.32
+      "energy": 0
     },
     {
       "label": "Thu",
-      "energy": 0.15
+      "energy": 0
     },
     {
       "label": "Fri",
-      "energy": 1
+      "energy": 0.57
     },
     {
       "label": "Sat",
-      "energy": 0
+      "energy": 1
     },
     {
       "label": "Sun",
-      "energy": 0
+      "energy": 0.1
     }
   ],
   "topTracks": [
@@ -68,12 +68,12 @@
       "url": "https://open.spotify.com/artist/2tIP7SsRs7vjIcLrU85W8J"
     },
     {
-      "name": "¥$",
-      "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
-    },
-    {
       "name": "Don Toliver",
       "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
+    },
+    {
+      "name": "¥$",
+      "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
     },
     {
       "name": "ZHU",
