@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-05-24",
-  "listeningTodayMinutes": 112,
+  "updatedAt": "2026-05-25",
+  "listeningTodayMinutes": 38,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 0
+      "energy": 1
     },
     {
       "label": "Tue",
@@ -20,15 +20,15 @@
     },
     {
       "label": "Fri",
-      "energy": 0.57
+      "energy": 0
     },
     {
       "label": "Sat",
-      "energy": 1
+      "energy": 0
     },
     {
       "label": "Sun",
-      "energy": 0.1
+      "energy": 0
     }
   ],
   "topTracks": [
@@ -43,19 +43,19 @@
       "url": "https://open.spotify.com/track/01iMj24ADbxjoOob3TBJfq"
     },
     {
+      "name": "PROMOTION",
+      "artist": "¥$, Kanye West, Ty Dolla $ign",
+      "url": "https://open.spotify.com/track/6bSfeCXlUaGa3eWCy5qPTb"
+    },
+    {
       "name": "DO IT",
       "artist": "¥$, Kanye West, Ty Dolla $ign",
       "url": "https://open.spotify.com/track/1oNaDXXu9I4UCJ8Fh0Hfjg"
     },
     {
-      "name": "Woods",
-      "artist": "Mac Miller",
-      "url": "https://open.spotify.com/track/3Qa944OTMZkg8DHjET8JQv"
-    },
-    {
-      "name": "PROMOTION",
-      "artist": "¥$, Kanye West, Ty Dolla $ign",
-      "url": "https://open.spotify.com/track/6bSfeCXlUaGa3eWCy5qPTb"
+      "name": "Divine",
+      "artist": "Blair Muir",
+      "url": "https://open.spotify.com/track/3VgFcNDykoAl6Nr6ZxGfX8"
     }
   ],
   "topArtists": [
