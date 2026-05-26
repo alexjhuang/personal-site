@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-25",
-  "listeningTodayMinutes": 38,
+  "updatedAt": "2026-05-26",
+  "listeningTodayMinutes": 3,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -8,7 +8,7 @@
     },
     {
       "label": "Tue",
-      "energy": 0
+      "energy": 0.1
     },
     {
       "label": "Wed",
@@ -43,19 +43,19 @@
       "url": "https://open.spotify.com/track/01iMj24ADbxjoOob3TBJfq"
     },
     {
-      "name": "PROMOTION",
-      "artist": "¥$, Kanye West, Ty Dolla $ign",
-      "url": "https://open.spotify.com/track/6bSfeCXlUaGa3eWCy5qPTb"
+      "name": "Circadian Rhythm",
+      "artist": "Drake",
+      "url": "https://open.spotify.com/track/1eroCliWpJrEu1V7VSObcO"
+    },
+    {
+      "name": "Woods",
+      "artist": "Mac Miller",
+      "url": "https://open.spotify.com/track/3Qa944OTMZkg8DHjET8JQv"
     },
     {
       "name": "DO IT",
       "artist": "¥$, Kanye West, Ty Dolla $ign",
       "url": "https://open.spotify.com/track/1oNaDXXu9I4UCJ8Fh0Hfjg"
-    },
-    {
-      "name": "Divine",
-      "artist": "Blair Muir",
-      "url": "https://open.spotify.com/track/3VgFcNDykoAl6Nr6ZxGfX8"
     }
   ],
   "topArtists": [
