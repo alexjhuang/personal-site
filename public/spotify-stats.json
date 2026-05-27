@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-26",
-  "listeningTodayMinutes": 3,
+  "updatedAt": "2026-05-27",
+  "listeningTodayMinutes": 27,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -8,11 +8,11 @@
     },
     {
       "label": "Tue",
-      "energy": 0.1
+      "energy": 0.7
     },
     {
       "label": "Wed",
-      "energy": 0
+      "energy": 0.1
     },
     {
       "label": "Thu",
@@ -43,6 +43,11 @@
       "url": "https://open.spotify.com/track/01iMj24ADbxjoOob3TBJfq"
     },
     {
+      "name": "Shabang",
+      "artist": "Drake",
+      "url": "https://open.spotify.com/track/6vjpQIdABqntoe3zPazPec"
+    },
+    {
       "name": "Circadian Rhythm",
       "artist": "Drake",
       "url": "https://open.spotify.com/track/1eroCliWpJrEu1V7VSObcO"
@@ -51,11 +56,6 @@
       "name": "Woods",
       "artist": "Mac Miller",
       "url": "https://open.spotify.com/track/3Qa944OTMZkg8DHjET8JQv"
-    },
-    {
-      "name": "DO IT",
-      "artist": "¥$, Kanye West, Ty Dolla $ign",
-      "url": "https://open.spotify.com/track/1oNaDXXu9I4UCJ8Fh0Hfjg"
     }
   ],
   "topArtists": [
@@ -72,12 +72,12 @@
       "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
     },
     {
-      "name": "¥$",
-      "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
-    },
-    {
       "name": "ZHU",
       "url": "https://open.spotify.com/artist/28j8lBWDdDSHSSt5oPlsX2"
+    },
+    {
+      "name": "¥$",
+      "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
     }
   ],
   "currentlyPlaying": null
