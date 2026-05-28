@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-27",
-  "listeningTodayMinutes": 27,
+  "updatedAt": "2026-05-28",
+  "listeningTodayMinutes": 6,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -12,7 +12,7 @@
     },
     {
       "label": "Wed",
-      "energy": 0.1
+      "energy": 0.3
     },
     {
       "label": "Thu",
@@ -38,11 +38,6 @@
       "url": "https://open.spotify.com/track/0TQsdL44um3gas07wdLKt8"
     },
     {
-      "name": "YUKON (INTERLUDE)",
-      "artist": "Joji",
-      "url": "https://open.spotify.com/track/01iMj24ADbxjoOob3TBJfq"
-    },
-    {
       "name": "Shabang",
       "artist": "Drake",
       "url": "https://open.spotify.com/track/6vjpQIdABqntoe3zPazPec"
@@ -51,6 +46,11 @@
       "name": "Circadian Rhythm",
       "artist": "Drake",
       "url": "https://open.spotify.com/track/1eroCliWpJrEu1V7VSObcO"
+    },
+    {
+      "name": "YUKON (INTERLUDE)",
+      "artist": "Joji",
+      "url": "https://open.spotify.com/track/01iMj24ADbxjoOob3TBJfq"
     },
     {
       "name": "Woods",
