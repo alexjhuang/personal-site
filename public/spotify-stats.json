@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-28",
-  "listeningTodayMinutes": 6,
+  "updatedAt": "2026-05-29",
+  "listeningTodayMinutes": 4,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -20,7 +20,7 @@
     },
     {
       "label": "Fri",
-      "energy": 0
+      "energy": 0.1
     },
     {
       "label": "Sat",
@@ -48,14 +48,14 @@
       "url": "https://open.spotify.com/track/1eroCliWpJrEu1V7VSObcO"
     },
     {
-      "name": "YUKON (INTERLUDE)",
-      "artist": "Joji",
-      "url": "https://open.spotify.com/track/01iMj24ADbxjoOob3TBJfq"
+      "name": "GRAMS",
+      "artist": "Thekidszn",
+      "url": "https://open.spotify.com/track/2nvgmIyONM6yzB4MhdC5G3"
     },
     {
-      "name": "Woods",
-      "artist": "Mac Miller",
-      "url": "https://open.spotify.com/track/3Qa944OTMZkg8DHjET8JQv"
+      "name": "Janice STFU",
+      "artist": "Drake",
+      "url": "https://open.spotify.com/track/514joG57v4yKTsfQmz7stz"
     }
   ],
   "topArtists": [
@@ -72,12 +72,12 @@
       "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
     },
     {
-      "name": "ZHU",
-      "url": "https://open.spotify.com/artist/28j8lBWDdDSHSSt5oPlsX2"
-    },
-    {
       "name": "¥$",
       "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
+    },
+    {
+      "name": "John Summit",
+      "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
     }
   ],
   "currentlyPlaying": null
