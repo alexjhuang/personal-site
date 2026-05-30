@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-05-29",
-  "listeningTodayMinutes": 4,
+  "updatedAt": "2026-05-30",
+  "listeningTodayMinutes": 46,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 1
+      "energy": 0.67
     },
     {
       "label": "Tue",
-      "energy": 0.7
+      "energy": 0.47
     },
     {
       "label": "Wed",
-      "energy": 0.3
+      "energy": 0.2
     },
     {
       "label": "Thu",
@@ -20,7 +20,7 @@
     },
     {
       "label": "Fri",
-      "energy": 0.1
+      "energy": 1
     },
     {
       "label": "Sat",
@@ -33,14 +33,19 @@
   ],
   "topTracks": [
     {
-      "name": "I CONDEMN",
-      "artist": "The Kid LAROI",
-      "url": "https://open.spotify.com/track/0TQsdL44um3gas07wdLKt8"
-    },
-    {
       "name": "Shabang",
       "artist": "Drake",
       "url": "https://open.spotify.com/track/6vjpQIdABqntoe3zPazPec"
+    },
+    {
+      "name": "Janice STFU",
+      "artist": "Drake",
+      "url": "https://open.spotify.com/track/514joG57v4yKTsfQmz7stz"
+    },
+    {
+      "name": "I CONDEMN",
+      "artist": "The Kid LAROI",
+      "url": "https://open.spotify.com/track/0TQsdL44um3gas07wdLKt8"
     },
     {
       "name": "Circadian Rhythm",
@@ -51,11 +56,6 @@
       "name": "GRAMS",
       "artist": "Thekidszn",
       "url": "https://open.spotify.com/track/2nvgmIyONM6yzB4MhdC5G3"
-    },
-    {
-      "name": "Janice STFU",
-      "artist": "Drake",
-      "url": "https://open.spotify.com/track/514joG57v4yKTsfQmz7stz"
     }
   ],
   "topArtists": [
@@ -72,12 +72,12 @@
       "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
     },
     {
-      "name": "¥$",
-      "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
-    },
-    {
       "name": "John Summit",
       "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
+    },
+    {
+      "name": "Henry Fong",
+      "url": "https://open.spotify.com/artist/3nALc9PyUfe6CO3EY9bNhH"
     }
   ],
   "currentlyPlaying": null
