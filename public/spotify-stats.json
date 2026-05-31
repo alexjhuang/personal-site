@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-30",
-  "listeningTodayMinutes": 46,
+  "updatedAt": "2026-05-31",
+  "listeningTodayMinutes": 29,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -24,11 +24,11 @@
     },
     {
       "label": "Sat",
-      "energy": 0
+      "energy": 0.2
     },
     {
       "label": "Sun",
-      "energy": 0
+      "energy": 0.47
     }
   ],
   "topTracks": [
@@ -53,9 +53,9 @@
       "url": "https://open.spotify.com/track/1eroCliWpJrEu1V7VSObcO"
     },
     {
-      "name": "GRAMS",
-      "artist": "Thekidszn",
-      "url": "https://open.spotify.com/track/2nvgmIyONM6yzB4MhdC5G3"
+      "name": "Is there free breakfast here?",
+      "artist": "Hotel Ugly",
+      "url": "https://open.spotify.com/track/30jui3PqevssdIVpjEWM38"
     }
   ],
   "topArtists": [
