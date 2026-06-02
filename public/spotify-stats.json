@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-01",
-  "listeningTodayMinutes": 38,
+  "updatedAt": "2026-06-02",
+  "listeningTodayMinutes": 71,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -8,7 +8,7 @@
     },
     {
       "label": "Tue",
-      "energy": 0
+      "energy": 0.05
     },
     {
       "label": "Wed",
@@ -33,14 +33,14 @@
   ],
   "topTracks": [
     {
-      "name": "Shabang",
-      "artist": "Drake",
-      "url": "https://open.spotify.com/track/6vjpQIdABqntoe3zPazPec"
-    },
-    {
       "name": "Janice STFU",
       "artist": "Drake",
       "url": "https://open.spotify.com/track/514joG57v4yKTsfQmz7stz"
+    },
+    {
+      "name": "Shabang",
+      "artist": "Drake",
+      "url": "https://open.spotify.com/track/6vjpQIdABqntoe3zPazPec"
     },
     {
       "name": "I CONDEMN",
@@ -53,9 +53,9 @@
       "url": "https://open.spotify.com/track/1eroCliWpJrEu1V7VSObcO"
     },
     {
-      "name": "Is there free breakfast here?",
-      "artist": "Hotel Ugly",
-      "url": "https://open.spotify.com/track/30jui3PqevssdIVpjEWM38"
+      "name": "GRAMS",
+      "artist": "Thekidszn",
+      "url": "https://open.spotify.com/track/2nvgmIyONM6yzB4MhdC5G3"
     }
   ],
   "topArtists": [
@@ -68,21 +68,17 @@
       "url": "https://open.spotify.com/artist/2tIP7SsRs7vjIcLrU85W8J"
     },
     {
-      "name": "Don Toliver",
-      "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
-    },
-    {
       "name": "John Summit",
       "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
     },
     {
       "name": "Henry Fong",
       "url": "https://open.spotify.com/artist/3nALc9PyUfe6CO3EY9bNhH"
+    },
+    {
+      "name": "Don Toliver",
+      "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
     }
   ],
-  "currentlyPlaying": {
-    "name": "Circadian Rhythm",
-    "artist": "Drake",
-    "url": "https://open.spotify.com/track/1eroCliWpJrEu1V7VSObcO"
-  }
+  "currentlyPlaying": null
 }
