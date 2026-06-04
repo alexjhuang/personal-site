@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-03",
-  "listeningTodayMinutes": 20,
+  "updatedAt": "2026-06-04",
+  "listeningTodayMinutes": 22,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -12,11 +12,11 @@
     },
     {
       "label": "Wed",
-      "energy": 0.29
+      "energy": 0.43
     },
     {
       "label": "Thu",
-      "energy": 0
+      "energy": 0.05
     },
     {
       "label": "Fri",
@@ -43,19 +43,19 @@
       "url": "https://open.spotify.com/track/6vjpQIdABqntoe3zPazPec"
     },
     {
-      "name": "I CONDEMN",
-      "artist": "The Kid LAROI",
-      "url": "https://open.spotify.com/track/0TQsdL44um3gas07wdLKt8"
-    },
-    {
       "name": "Circadian Rhythm",
       "artist": "Drake",
       "url": "https://open.spotify.com/track/1eroCliWpJrEu1V7VSObcO"
     },
     {
-      "name": "GRAMS",
-      "artist": "Thekidszn",
-      "url": "https://open.spotify.com/track/2nvgmIyONM6yzB4MhdC5G3"
+      "name": "Is there free breakfast here?",
+      "artist": "Hotel Ugly",
+      "url": "https://open.spotify.com/track/30jui3PqevssdIVpjEWM38"
+    },
+    {
+      "name": "Where Have You Been",
+      "artist": "REESE",
+      "url": "https://open.spotify.com/track/2OyestNLBmdbsQJaL9qaVG"
     }
   ],
   "topArtists": [
@@ -72,12 +72,12 @@
       "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
     },
     {
-      "name": "Henry Fong",
-      "url": "https://open.spotify.com/artist/3nALc9PyUfe6CO3EY9bNhH"
+      "name": "KETTAMA",
+      "url": "https://open.spotify.com/artist/3an9rnsXKPCAMlZgH4A0n4"
     },
     {
-      "name": "Don Toliver",
-      "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
+      "name": "¥$",
+      "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
     }
   ],
   "currentlyPlaying": null
