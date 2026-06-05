@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-04",
-  "listeningTodayMinutes": 22,
+  "updatedAt": "2026-06-05",
+  "listeningTodayMinutes": 46,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -16,11 +16,11 @@
     },
     {
       "label": "Thu",
-      "energy": 0.05
+      "energy": 0.57
     },
     {
       "label": "Fri",
-      "energy": 0
+      "energy": 0.1
     },
     {
       "label": "Sat",
@@ -43,9 +43,9 @@
       "url": "https://open.spotify.com/track/6vjpQIdABqntoe3zPazPec"
     },
     {
-      "name": "Circadian Rhythm",
-      "artist": "Drake",
-      "url": "https://open.spotify.com/track/1eroCliWpJrEu1V7VSObcO"
+      "name": "Where Have You Been",
+      "artist": "REESE",
+      "url": "https://open.spotify.com/track/2OyestNLBmdbsQJaL9qaVG"
     },
     {
       "name": "Is there free breakfast here?",
@@ -53,9 +53,9 @@
       "url": "https://open.spotify.com/track/30jui3PqevssdIVpjEWM38"
     },
     {
-      "name": "Where Have You Been",
-      "artist": "REESE",
-      "url": "https://open.spotify.com/track/2OyestNLBmdbsQJaL9qaVG"
+      "name": "Too Late",
+      "artist": "Shankz",
+      "url": "https://open.spotify.com/track/53mNFIZypKLnQlQyw3DKAo"
     }
   ],
   "topArtists": [
@@ -76,8 +76,8 @@
       "url": "https://open.spotify.com/artist/3an9rnsXKPCAMlZgH4A0n4"
     },
     {
-      "name": "¥$",
-      "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
+      "name": "LATIN MAFIA",
+      "url": "https://open.spotify.com/artist/6XTGKOV9jceQ6f67lnhpbF"
     }
   ],
   "currentlyPlaying": null
