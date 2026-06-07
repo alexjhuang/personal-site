@@ -1,34 +1,34 @@
 {
-  "updatedAt": "2026-06-06",
-  "listeningTodayMinutes": 25,
+  "updatedAt": "2026-06-07",
+  "listeningTodayMinutes": 64,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 1
+      "energy": 0
     },
     {
       "label": "Tue",
-      "energy": 0.06
+      "energy": 0
     },
     {
       "label": "Wed",
-      "energy": 0.56
+      "energy": 0.46
     },
     {
       "label": "Thu",
-      "energy": 0.75
+      "energy": 0.92
     },
     {
       "label": "Fri",
-      "energy": 0.63
+      "energy": 0.77
     },
     {
       "label": "Sat",
-      "energy": 0.13
+      "energy": 0.69
     },
     {
       "label": "Sun",
-      "energy": 0
+      "energy": 1
     }
   ],
   "topTracks": [
