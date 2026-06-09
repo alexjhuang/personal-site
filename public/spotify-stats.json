@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-08",
-  "listeningTodayMinutes": 37,
+  "updatedAt": "2026-06-09",
+  "listeningTodayMinutes": 42,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -76,8 +76,8 @@
       "url": "https://open.spotify.com/artist/3an9rnsXKPCAMlZgH4A0n4"
     },
     {
-      "name": "LATIN MAFIA",
-      "url": "https://open.spotify.com/artist/6XTGKOV9jceQ6f67lnhpbF"
+      "name": "North West",
+      "url": "https://open.spotify.com/artist/5NTFOMIZSgupSw6yfnD4E2"
     }
   ],
   "currentlyPlaying": null
