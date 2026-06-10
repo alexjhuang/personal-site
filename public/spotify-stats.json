@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-06-09",
-  "listeningTodayMinutes": 42,
+  "updatedAt": "2026-06-10",
+  "listeningTodayMinutes": 125,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 1
+      "energy": 0.22
     },
     {
       "label": "Tue",
-      "energy": 0
+      "energy": 1
     },
     {
       "label": "Wed",
@@ -76,9 +76,13 @@
       "url": "https://open.spotify.com/artist/3an9rnsXKPCAMlZgH4A0n4"
     },
     {
-      "name": "North West",
-      "url": "https://open.spotify.com/artist/5NTFOMIZSgupSw6yfnD4E2"
+      "name": "J. Cole",
+      "url": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
     }
   ],
-  "currentlyPlaying": null
+  "currentlyPlaying": {
+    "name": "Circadian Rhythm",
+    "artist": "Drake",
+    "url": "https://open.spotify.com/track/1eroCliWpJrEu1V7VSObcO"
+  }
 }
