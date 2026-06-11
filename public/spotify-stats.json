@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-06-10",
-  "listeningTodayMinutes": 125,
+  "updatedAt": "2026-06-11",
+  "listeningTodayMinutes": 135,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 0.22
+      "energy": 0
     },
     {
       "label": "Tue",
-      "energy": 1
+      "energy": 0
     },
     {
       "label": "Wed",
-      "energy": 0
+      "energy": 1
     },
     {
       "label": "Thu",
@@ -68,21 +68,17 @@
       "url": "https://open.spotify.com/artist/2tIP7SsRs7vjIcLrU85W8J"
     },
     {
-      "name": "John Summit",
-      "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
-    },
-    {
       "name": "KETTAMA",
       "url": "https://open.spotify.com/artist/3an9rnsXKPCAMlZgH4A0n4"
+    },
+    {
+      "name": "John Summit",
+      "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
     },
     {
       "name": "J. Cole",
       "url": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
     }
   ],
-  "currentlyPlaying": {
-    "name": "Circadian Rhythm",
-    "artist": "Drake",
-    "url": "https://open.spotify.com/track/1eroCliWpJrEu1V7VSObcO"
-  }
+  "currentlyPlaying": null
 }
