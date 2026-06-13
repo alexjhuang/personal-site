@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-12",
-  "listeningTodayMinutes": 162,
+  "updatedAt": "2026-06-13",
+  "listeningTodayMinutes": 100,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -16,7 +16,7 @@
     },
     {
       "label": "Thu",
-      "energy": 0.52
+      "energy": 0.04
     },
     {
       "label": "Fri",
@@ -76,8 +76,8 @@
       "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
     },
     {
-      "name": "John Summit",
-      "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
+      "name": "Don Toliver",
+      "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
     }
   ],
   "currentlyPlaying": null
