@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-06-15",
-  "listeningTodayMinutes": 11,
+  "updatedAt": "2026-06-16",
+  "listeningTodayMinutes": 12,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 0
+      "energy": 1
     },
     {
       "label": "Tue",
