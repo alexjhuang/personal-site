@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-06-18",
-  "listeningTodayMinutes": 36,
+  "updatedAt": "2026-06-19",
+  "listeningTodayMinutes": 61,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 0.09
+      "energy": 0
     },
     {
       "label": "Tue",
-      "energy": 0.32
+      "energy": 0.23
     },
     {
       "label": "Wed",
@@ -16,11 +16,11 @@
     },
     {
       "label": "Thu",
-      "energy": 0.18
+      "energy": 0.23
     },
     {
       "label": "Fri",
-      "energy": 0
+      "energy": 0.82
     },
     {
       "label": "Sat",
@@ -76,8 +76,8 @@
       "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
     },
     {
-      "name": "Don Toliver",
-      "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
+      "name": "J. Cole",
+      "url": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
     }
   ],
   "currentlyPlaying": null
