@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-06-22",
-  "listeningTodayMinutes": 71,
+  "updatedAt": "2026-06-23",
+  "listeningTodayMinutes": 161,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 1
+      "energy": 0.52
     },
     {
       "label": "Tue",
-      "energy": 0
+      "energy": 1
     },
     {
       "label": "Wed",
@@ -68,16 +68,16 @@
       "url": "https://open.spotify.com/artist/2tIP7SsRs7vjIcLrU85W8J"
     },
     {
+      "name": "J. Cole",
+      "url": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
+    },
+    {
       "name": "¥$",
       "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
     },
     {
       "name": "KETTAMA",
       "url": "https://open.spotify.com/artist/3an9rnsXKPCAMlZgH4A0n4"
-    },
-    {
-      "name": "J. Cole",
-      "url": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
     }
   ],
   "currentlyPlaying": null
