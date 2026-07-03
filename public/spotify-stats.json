@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-02",
-  "listeningTodayMinutes": 0,
+  "updatedAt": "2026-07-03",
+  "listeningTodayMinutes": 31,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -8,7 +8,7 @@
     },
     {
       "label": "Tue",
-      "energy": 1
+      "energy": 0.75
     },
     {
       "label": "Wed",
@@ -20,7 +20,7 @@
     },
     {
       "label": "Fri",
-      "energy": 0
+      "energy": 1
     },
     {
       "label": "Sat",
@@ -43,19 +43,19 @@
       "url": "https://open.spotify.com/track/0eh0TQK1S209s9kovG0EWf"
     },
     {
-      "name": "Shabang",
-      "artist": "Drake",
-      "url": "https://open.spotify.com/track/6vjpQIdABqntoe3zPazPec"
-    },
-    {
-      "name": "Where Have You Been",
-      "artist": "REESE",
-      "url": "https://open.spotify.com/track/2OyestNLBmdbsQJaL9qaVG"
+      "name": "成都",
+      "artist": "Zhao Lei",
+      "url": "https://open.spotify.com/track/7oXjFNxUNzc07VOsaQrNEy"
     },
     {
       "name": "Yosemite",
       "artist": "KETTAMA, Interplanetary Criminal",
       "url": "https://open.spotify.com/track/6Z3cE0ZK0tmj7131PFIOeZ"
+    },
+    {
+      "name": "Shabang",
+      "artist": "Drake",
+      "url": "https://open.spotify.com/track/6vjpQIdABqntoe3zPazPec"
     }
   ],
   "topArtists": [
@@ -64,20 +64,20 @@
       "url": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
     },
     {
-      "name": "The Kid LAROI",
-      "url": "https://open.spotify.com/artist/2tIP7SsRs7vjIcLrU85W8J"
-    },
-    {
       "name": "J. Cole",
       "url": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
+    },
+    {
+      "name": "The Kid LAROI",
+      "url": "https://open.spotify.com/artist/2tIP7SsRs7vjIcLrU85W8J"
     },
     {
       "name": "¥$",
       "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
     },
     {
-      "name": "KETTAMA",
-      "url": "https://open.spotify.com/artist/3an9rnsXKPCAMlZgH4A0n4"
+      "name": "BUNT.",
+      "url": "https://open.spotify.com/artist/2CpLIMBoE2ZzyY3ZBCRZ7j"
     }
   ],
   "currentlyPlaying": null
