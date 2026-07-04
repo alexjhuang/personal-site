@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-03",
-  "listeningTodayMinutes": 31,
+  "updatedAt": "2026-07-04",
+  "listeningTodayMinutes": 44,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -8,7 +8,7 @@
     },
     {
       "label": "Tue",
-      "energy": 0.75
+      "energy": 0.4
     },
     {
       "label": "Wed",
@@ -20,11 +20,11 @@
     },
     {
       "label": "Fri",
-      "energy": 1
+      "energy": 0.53
     },
     {
       "label": "Sat",
-      "energy": 0
+      "energy": 1
     },
     {
       "label": "Sun",
@@ -48,14 +48,14 @@
       "url": "https://open.spotify.com/track/7oXjFNxUNzc07VOsaQrNEy"
     },
     {
-      "name": "Yosemite",
-      "artist": "KETTAMA, Interplanetary Criminal",
-      "url": "https://open.spotify.com/track/6Z3cE0ZK0tmj7131PFIOeZ"
-    },
-    {
       "name": "Shabang",
       "artist": "Drake",
       "url": "https://open.spotify.com/track/6vjpQIdABqntoe3zPazPec"
+    },
+    {
+      "name": "戒菸",
+      "artist": "Ronghao Li",
+      "url": "https://open.spotify.com/track/65KjitGykI5QIcsYrNhPZR"
     }
   ],
   "topArtists": [
