@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-08",
-  "listeningTodayMinutes": 31,
+  "updatedAt": "2026-07-09",
+  "listeningTodayMinutes": 39,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -12,7 +12,7 @@
     },
     {
       "label": "Wed",
-      "energy": 0
+      "energy": 0.61
     },
     {
       "label": "Thu",
@@ -64,20 +64,20 @@
       "url": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
     },
     {
-      "name": "The Kid LAROI",
-      "url": "https://open.spotify.com/artist/2tIP7SsRs7vjIcLrU85W8J"
-    },
-    {
       "name": "¥$",
       "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
+    },
+    {
+      "name": "The Kid LAROI",
+      "url": "https://open.spotify.com/artist/2tIP7SsRs7vjIcLrU85W8J"
     },
     {
       "name": "J. Cole",
       "url": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
     },
     {
-      "name": "Don Toliver",
-      "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
+      "name": "KETTAMA",
+      "url": "https://open.spotify.com/artist/3an9rnsXKPCAMlZgH4A0n4"
     }
   ],
   "currentlyPlaying": null
