@@ -1,26 +1,26 @@
 {
-  "updatedAt": "2026-07-09",
-  "listeningTodayMinutes": 39,
+  "updatedAt": "2026-07-10",
+  "listeningTodayMinutes": 165,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 1
+      "energy": 0
     },
     {
       "label": "Tue",
-      "energy": 0.44
+      "energy": 0
     },
     {
       "label": "Wed",
-      "energy": 0.61
+      "energy": 0
     },
     {
       "label": "Thu",
-      "energy": 0
+      "energy": 1
     },
     {
       "label": "Fri",
-      "energy": 0
+      "energy": 0.67
     },
     {
       "label": "Sat",
@@ -38,14 +38,14 @@
       "url": "https://open.spotify.com/track/0eh0TQK1S209s9kovG0EWf"
     },
     {
-      "name": "Janice STFU",
-      "artist": "Drake",
-      "url": "https://open.spotify.com/track/514joG57v4yKTsfQmz7stz"
-    },
-    {
       "name": "成都",
       "artist": "Zhao Lei",
       "url": "https://open.spotify.com/track/7oXjFNxUNzc07VOsaQrNEy"
+    },
+    {
+      "name": "Janice STFU",
+      "artist": "Drake",
+      "url": "https://open.spotify.com/track/514joG57v4yKTsfQmz7stz"
     },
     {
       "name": "戒菸",
@@ -53,9 +53,9 @@
       "url": "https://open.spotify.com/track/65KjitGykI5QIcsYrNhPZR"
     },
     {
-      "name": "Yosemite",
-      "artist": "KETTAMA, Interplanetary Criminal",
-      "url": "https://open.spotify.com/track/6Z3cE0ZK0tmj7131PFIOeZ"
+      "name": "突然好想你",
+      "artist": "Mayday",
+      "url": "https://open.spotify.com/track/0IAgufC1FlOg1nZMmRZxRr"
     }
   ],
   "topArtists": [
@@ -68,16 +68,16 @@
       "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
     },
     {
-      "name": "The Kid LAROI",
-      "url": "https://open.spotify.com/artist/2tIP7SsRs7vjIcLrU85W8J"
+      "name": "John Summit",
+      "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
     },
     {
       "name": "J. Cole",
       "url": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
     },
     {
-      "name": "KETTAMA",
-      "url": "https://open.spotify.com/artist/3an9rnsXKPCAMlZgH4A0n4"
+      "name": "The Kid LAROI",
+      "url": "https://open.spotify.com/artist/2tIP7SsRs7vjIcLrU85W8J"
     }
   ],
   "currentlyPlaying": null
