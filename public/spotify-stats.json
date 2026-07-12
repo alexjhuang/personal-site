@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-11",
-  "listeningTodayMinutes": 84,
+  "updatedAt": "2026-07-12",
+  "listeningTodayMinutes": 63,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -16,7 +16,7 @@
     },
     {
       "label": "Thu",
-      "energy": 0.3
+      "energy": 0
     },
     {
       "label": "Fri",
@@ -24,11 +24,11 @@
     },
     {
       "label": "Sat",
-      "energy": 0.21
+      "energy": 0.79
     },
     {
       "label": "Sun",
-      "energy": 0
+      "energy": 0.29
     }
   ],
   "topTracks": [
@@ -68,16 +68,16 @@
       "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
     },
     {
-      "name": "J. Cole",
-      "url": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
-    },
-    {
       "name": "John Summit",
       "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
     },
     {
-      "name": "The Kid LAROI",
-      "url": "https://open.spotify.com/artist/2tIP7SsRs7vjIcLrU85W8J"
+      "name": "Don Toliver",
+      "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
+    },
+    {
+      "name": "J. Cole",
+      "url": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
     }
   ],
   "currentlyPlaying": null
