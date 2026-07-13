@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-07-12",
-  "listeningTodayMinutes": 63,
+  "updatedAt": "2026-07-13",
+  "listeningTodayMinutes": 47,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 0
+      "energy": 1
     },
     {
       "label": "Tue",
@@ -20,15 +20,15 @@
     },
     {
       "label": "Fri",
-      "energy": 1
+      "energy": 0
     },
     {
       "label": "Sat",
-      "energy": 0.79
+      "energy": 0
     },
     {
       "label": "Sun",
-      "energy": 0.29
+      "energy": 0
     }
   ],
   "topTracks": [
@@ -64,20 +64,20 @@
       "url": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
     },
     {
-      "name": "¥$",
-      "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
-    },
-    {
       "name": "John Summit",
       "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
+    },
+    {
+      "name": "¥$",
+      "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
     },
     {
       "name": "Don Toliver",
       "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
     },
     {
-      "name": "J. Cole",
-      "url": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
+      "name": "Poopz",
+      "url": "https://open.spotify.com/artist/3b64s84Ke6y7aKyZO5EIKH"
     }
   ],
   "currentlyPlaying": null
