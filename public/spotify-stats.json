@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-13",
-  "listeningTodayMinutes": 47,
+  "updatedAt": "2026-07-14",
+  "listeningTodayMinutes": 103,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -8,7 +8,7 @@
     },
     {
       "label": "Tue",
-      "energy": 0
+      "energy": 0.16
     },
     {
       "label": "Wed",
@@ -38,9 +38,9 @@
       "url": "https://open.spotify.com/track/7oXjFNxUNzc07VOsaQrNEy"
     },
     {
-      "name": "戒菸",
-      "artist": "Ronghao Li",
-      "url": "https://open.spotify.com/track/65KjitGykI5QIcsYrNhPZR"
+      "name": "Janice STFU",
+      "artist": "Drake",
+      "url": "https://open.spotify.com/track/514joG57v4yKTsfQmz7stz"
     },
     {
       "name": "Bluffin' (with The Kid LAROI)",
@@ -48,9 +48,9 @@
       "url": "https://open.spotify.com/track/0eh0TQK1S209s9kovG0EWf"
     },
     {
-      "name": "Janice STFU",
-      "artist": "Drake",
-      "url": "https://open.spotify.com/track/514joG57v4yKTsfQmz7stz"
+      "name": "戒菸",
+      "artist": "Ronghao Li",
+      "url": "https://open.spotify.com/track/65KjitGykI5QIcsYrNhPZR"
     },
     {
       "name": "突然好想你",
@@ -72,12 +72,12 @@
       "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
     },
     {
-      "name": "Don Toliver",
-      "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
+      "name": "The Kid LAROI",
+      "url": "https://open.spotify.com/artist/2tIP7SsRs7vjIcLrU85W8J"
     },
     {
-      "name": "Poopz",
-      "url": "https://open.spotify.com/artist/3b64s84Ke6y7aKyZO5EIKH"
+      "name": "Don Toliver",
+      "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
     }
   ],
   "currentlyPlaying": null
