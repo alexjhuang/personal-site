@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-07-15",
-  "listeningTodayMinutes": 76,
+  "updatedAt": "2026-07-16",
+  "listeningTodayMinutes": 37,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 0.67
+      "energy": 0.19
     },
     {
       "label": "Tue",
@@ -12,7 +12,7 @@
     },
     {
       "label": "Wed",
-      "energy": 0.19
+      "energy": 0.67
     },
     {
       "label": "Thu",
@@ -38,9 +38,9 @@
       "url": "https://open.spotify.com/track/7oXjFNxUNzc07VOsaQrNEy"
     },
     {
-      "name": "Janice STFU",
-      "artist": "Drake",
-      "url": "https://open.spotify.com/track/514joG57v4yKTsfQmz7stz"
+      "name": "戒菸",
+      "artist": "Ronghao Li",
+      "url": "https://open.spotify.com/track/65KjitGykI5QIcsYrNhPZR"
     },
     {
       "name": "Bluffin' (with The Kid LAROI)",
@@ -48,14 +48,14 @@
       "url": "https://open.spotify.com/track/0eh0TQK1S209s9kovG0EWf"
     },
     {
-      "name": "戒菸",
-      "artist": "Ronghao Li",
-      "url": "https://open.spotify.com/track/65KjitGykI5QIcsYrNhPZR"
-    },
-    {
       "name": "突然好想你",
       "artist": "Mayday",
       "url": "https://open.spotify.com/track/0IAgufC1FlOg1nZMmRZxRr"
+    },
+    {
+      "name": "Janice STFU",
+      "artist": "Drake",
+      "url": "https://open.spotify.com/track/514joG57v4yKTsfQmz7stz"
     }
   ],
   "topArtists": [
@@ -64,20 +64,20 @@
       "url": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
     },
     {
-      "name": "John Summit",
-      "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
-    },
-    {
       "name": "BUNT.",
       "url": "https://open.spotify.com/artist/2CpLIMBoE2ZzyY3ZBCRZ7j"
     },
     {
-      "name": "¥$",
-      "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
+      "name": "John Summit",
+      "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
     },
     {
-      "name": "The Kid LAROI",
-      "url": "https://open.spotify.com/artist/2tIP7SsRs7vjIcLrU85W8J"
+      "name": "Don Toliver",
+      "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
+    },
+    {
+      "name": "¥$",
+      "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
     }
   ],
   "currentlyPlaying": null
