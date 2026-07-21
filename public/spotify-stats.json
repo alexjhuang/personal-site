@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-20",
-  "listeningTodayMinutes": 32,
+  "updatedAt": "2026-07-21",
+  "listeningTodayMinutes": 40,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -8,7 +8,7 @@
     },
     {
       "label": "Tue",
-      "energy": 0
+      "energy": 0.7
     },
     {
       "label": "Wed",
@@ -33,14 +33,14 @@
   ],
   "topTracks": [
     {
-      "name": "成都",
-      "artist": "Zhao Lei",
-      "url": "https://open.spotify.com/track/7oXjFNxUNzc07VOsaQrNEy"
-    },
-    {
       "name": "戒菸",
       "artist": "Ronghao Li",
       "url": "https://open.spotify.com/track/65KjitGykI5QIcsYrNhPZR"
+    },
+    {
+      "name": "成都",
+      "artist": "Zhao Lei",
+      "url": "https://open.spotify.com/track/7oXjFNxUNzc07VOsaQrNEy"
     },
     {
       "name": "突然好想你",
