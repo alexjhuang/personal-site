@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-07-21",
-  "listeningTodayMinutes": 40,
+  "updatedAt": "2026-07-22",
+  "listeningTodayMinutes": 56,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 1
+      "energy": 0.67
     },
     {
       "label": "Tue",
-      "energy": 0.7
+      "energy": 1
     },
     {
       "label": "Wed",
-      "energy": 0
+      "energy": 0.53
     },
     {
       "label": "Thu",
@@ -33,14 +33,14 @@
   ],
   "topTracks": [
     {
-      "name": "戒菸",
-      "artist": "Ronghao Li",
-      "url": "https://open.spotify.com/track/65KjitGykI5QIcsYrNhPZR"
-    },
-    {
       "name": "成都",
       "artist": "Zhao Lei",
       "url": "https://open.spotify.com/track/7oXjFNxUNzc07VOsaQrNEy"
+    },
+    {
+      "name": "戒菸",
+      "artist": "Ronghao Li",
+      "url": "https://open.spotify.com/track/65KjitGykI5QIcsYrNhPZR"
     },
     {
       "name": "突然好想你",
@@ -48,14 +48,14 @@
       "url": "https://open.spotify.com/track/0IAgufC1FlOg1nZMmRZxRr"
     },
     {
-      "name": "Bluffin' (with The Kid LAROI)",
-      "artist": "Joji, The Kid LAROI",
-      "url": "https://open.spotify.com/track/0eh0TQK1S209s9kovG0EWf"
-    },
-    {
       "name": "Yosemite",
       "artist": "KETTAMA, Interplanetary Criminal",
       "url": "https://open.spotify.com/track/6Z3cE0ZK0tmj7131PFIOeZ"
+    },
+    {
+      "name": "Bluffin' (with The Kid LAROI)",
+      "artist": "Joji, The Kid LAROI",
+      "url": "https://open.spotify.com/track/0eh0TQK1S209s9kovG0EWf"
     }
   ],
   "topArtists": [
