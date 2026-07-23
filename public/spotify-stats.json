@@ -1,22 +1,22 @@
 {
-  "updatedAt": "2026-07-22",
-  "listeningTodayMinutes": 56,
+  "updatedAt": "2026-07-23",
+  "listeningTodayMinutes": 146,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 0.67
+      "energy": 0
     },
     {
       "label": "Tue",
-      "energy": 1
+      "energy": 0
     },
     {
       "label": "Wed",
-      "energy": 0.53
+      "energy": 1
     },
     {
       "label": "Thu",
-      "energy": 0
+      "energy": 0.19
     },
     {
       "label": "Fri",
@@ -33,9 +33,9 @@
   ],
   "topTracks": [
     {
-      "name": "成都",
-      "artist": "Zhao Lei",
-      "url": "https://open.spotify.com/track/7oXjFNxUNzc07VOsaQrNEy"
+      "name": "Bluffin' (with The Kid LAROI)",
+      "artist": "Joji, The Kid LAROI",
+      "url": "https://open.spotify.com/track/0eh0TQK1S209s9kovG0EWf"
     },
     {
       "name": "戒菸",
@@ -43,9 +43,9 @@
       "url": "https://open.spotify.com/track/65KjitGykI5QIcsYrNhPZR"
     },
     {
-      "name": "突然好想你",
-      "artist": "Mayday",
-      "url": "https://open.spotify.com/track/0IAgufC1FlOg1nZMmRZxRr"
+      "name": "成都",
+      "artist": "Zhao Lei",
+      "url": "https://open.spotify.com/track/7oXjFNxUNzc07VOsaQrNEy"
     },
     {
       "name": "Yosemite",
@@ -53,9 +53,9 @@
       "url": "https://open.spotify.com/track/6Z3cE0ZK0tmj7131PFIOeZ"
     },
     {
-      "name": "Bluffin' (with The Kid LAROI)",
-      "artist": "Joji, The Kid LAROI",
-      "url": "https://open.spotify.com/track/0eh0TQK1S209s9kovG0EWf"
+      "name": "Janice STFU",
+      "artist": "Drake",
+      "url": "https://open.spotify.com/track/514joG57v4yKTsfQmz7stz"
     }
   ],
   "topArtists": [
@@ -76,8 +76,8 @@
       "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
     },
     {
-      "name": "Armin van Buuren",
-      "url": "https://open.spotify.com/artist/0SfsnGyD8FpIN4U4WCkBZ5"
+      "name": "¥$",
+      "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
     }
   ],
   "currentlyPlaying": null
