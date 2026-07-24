@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-23",
-  "listeningTodayMinutes": 146,
+  "updatedAt": "2026-07-24",
+  "listeningTodayMinutes": 55,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -16,11 +16,11 @@
     },
     {
       "label": "Thu",
-      "energy": 0.19
+      "energy": 1
     },
     {
       "label": "Fri",
-      "energy": 0
+      "energy": 0.08
     },
     {
       "label": "Sat",
@@ -43,9 +43,9 @@
       "url": "https://open.spotify.com/track/65KjitGykI5QIcsYrNhPZR"
     },
     {
-      "name": "成都",
-      "artist": "Zhao Lei",
-      "url": "https://open.spotify.com/track/7oXjFNxUNzc07VOsaQrNEy"
+      "name": "Janice STFU",
+      "artist": "Drake",
+      "url": "https://open.spotify.com/track/514joG57v4yKTsfQmz7stz"
     },
     {
       "name": "Yosemite",
@@ -53,9 +53,9 @@
       "url": "https://open.spotify.com/track/6Z3cE0ZK0tmj7131PFIOeZ"
     },
     {
-      "name": "Janice STFU",
-      "artist": "Drake",
-      "url": "https://open.spotify.com/track/514joG57v4yKTsfQmz7stz"
+      "name": "成都",
+      "artist": "Zhao Lei",
+      "url": "https://open.spotify.com/track/7oXjFNxUNzc07VOsaQrNEy"
     }
   ],
   "topArtists": [
@@ -68,12 +68,12 @@
       "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
     },
     {
-      "name": "BUNT.",
-      "url": "https://open.spotify.com/artist/2CpLIMBoE2ZzyY3ZBCRZ7j"
-    },
-    {
       "name": "Don Toliver",
       "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
+    },
+    {
+      "name": "BUNT.",
+      "url": "https://open.spotify.com/artist/2CpLIMBoE2ZzyY3ZBCRZ7j"
     },
     {
       "name": "¥$",
