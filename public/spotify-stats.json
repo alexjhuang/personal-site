@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-25",
-  "listeningTodayMinutes": 170,
+  "updatedAt": "2026-07-26",
+  "listeningTodayMinutes": 28,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -24,11 +24,11 @@
     },
     {
       "label": "Sat",
-      "energy": 0
+      "energy": 0.17
     },
     {
       "label": "Sun",
-      "energy": 0
+      "energy": 0.05
     }
   ],
   "topTracks": [
@@ -72,12 +72,12 @@
       "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
     },
     {
-      "name": "BUNT.",
-      "url": "https://open.spotify.com/artist/2CpLIMBoE2ZzyY3ZBCRZ7j"
-    },
-    {
       "name": "¥$",
       "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
+    },
+    {
+      "name": "BUNT.",
+      "url": "https://open.spotify.com/artist/2CpLIMBoE2ZzyY3ZBCRZ7j"
     }
   ],
   "currentlyPlaying": null
