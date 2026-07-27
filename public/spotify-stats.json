@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-07-26",
-  "listeningTodayMinutes": 28,
+  "updatedAt": "2026-07-27",
+  "listeningTodayMinutes": 54,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 0
+      "energy": 1
     },
     {
       "label": "Tue",
@@ -20,15 +20,15 @@
     },
     {
       "label": "Fri",
-      "energy": 1
+      "energy": 0
     },
     {
       "label": "Sat",
-      "energy": 0.17
+      "energy": 0
     },
     {
       "label": "Sun",
-      "energy": 0.05
+      "energy": 0
     }
   ],
   "topTracks": [
