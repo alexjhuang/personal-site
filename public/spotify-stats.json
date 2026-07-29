@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-07-28",
-  "listeningTodayMinutes": 8,
+  "updatedAt": "2026-07-29",
+  "listeningTodayMinutes": 37,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 1
+      "energy": 0.33
     },
     {
       "label": "Tue",
-      "energy": 0.75
+      "energy": 0.33
     },
     {
       "label": "Wed",
-      "energy": 0
+      "energy": 1
     },
     {
       "label": "Thu",
@@ -72,12 +72,12 @@
       "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
     },
     {
-      "name": "¥$",
-      "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
+      "name": "J. Cole",
+      "url": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
     },
     {
-      "name": "BUNT.",
-      "url": "https://open.spotify.com/artist/2CpLIMBoE2ZzyY3ZBCRZ7j"
+      "name": "¥$",
+      "url": "https://open.spotify.com/artist/4xPQFgDA5M2xa0ZGo5iIsv"
     }
   ],
   "currentlyPlaying": null
