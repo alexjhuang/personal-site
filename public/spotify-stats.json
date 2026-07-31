@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-30",
-  "listeningTodayMinutes": 120,
+  "updatedAt": "2026-07-31",
+  "listeningTodayMinutes": 81,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -12,7 +12,7 @@
     },
     {
       "label": "Wed",
-      "energy": 0.85
+      "energy": 0
     },
     {
       "label": "Thu",
