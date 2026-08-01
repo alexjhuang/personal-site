@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-31",
-  "listeningTodayMinutes": 81,
+  "updatedAt": "2026-08-01",
+  "listeningTodayMinutes": 66,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -20,11 +20,11 @@
     },
     {
       "label": "Fri",
-      "energy": 0
+      "energy": 0.63
     },
     {
       "label": "Sat",
-      "energy": 0
+      "energy": 0.03
     },
     {
       "label": "Sun",
@@ -48,14 +48,14 @@
       "url": "https://open.spotify.com/track/6Z3cE0ZK0tmj7131PFIOeZ"
     },
     {
-      "name": "戒菸",
-      "artist": "Ronghao Li",
-      "url": "https://open.spotify.com/track/65KjitGykI5QIcsYrNhPZR"
+      "name": "What Did I Miss?",
+      "artist": "Drake",
+      "url": "https://open.spotify.com/track/7oDbkGSI3IRzKmhrTiQdID"
     },
     {
-      "name": "成都",
-      "artist": "Zhao Lei",
-      "url": "https://open.spotify.com/track/7oXjFNxUNzc07VOsaQrNEy"
+      "name": "ONE DESIRE",
+      "artist": "ZHU",
+      "url": "https://open.spotify.com/track/1Yn8fFPbcjgrzjSElzCsgT"
     }
   ],
   "topArtists": [
