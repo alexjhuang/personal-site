@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-08-09",
-  "listeningTodayMinutes": 62,
+  "updatedAt": "2026-08-10",
+  "listeningTodayMinutes": 95,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 0
+      "energy": 1
     },
     {
       "label": "Tue",
@@ -20,15 +20,15 @@
     },
     {
       "label": "Fri",
-      "energy": 1
+      "energy": 0
     },
     {
       "label": "Sat",
-      "energy": 0.91
+      "energy": 0
     },
     {
       "label": "Sun",
-      "energy": 0.36
+      "energy": 0
     }
   ],
   "topTracks": [
@@ -76,8 +76,8 @@
       "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
     },
     {
-      "name": "BUNT.",
-      "url": "https://open.spotify.com/artist/2CpLIMBoE2ZzyY3ZBCRZ7j"
+      "name": "Ian Asher",
+      "url": "https://open.spotify.com/artist/5IrxhrMyvZxzgPYrC9j2km"
     }
   ],
   "currentlyPlaying": null
