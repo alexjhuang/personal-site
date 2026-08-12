@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-08-11",
-  "listeningTodayMinutes": 152,
+  "updatedAt": "2026-08-12",
+  "listeningTodayMinutes": 136,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 1
+      "energy": 0.03
     },
     {
       "label": "Tue",
-      "energy": 0.16
+      "energy": 1
     },
     {
       "label": "Wed",
-      "energy": 0
+      "energy": 0.58
     },
     {
       "label": "Thu",
@@ -72,13 +72,17 @@
       "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
     },
     {
-      "name": "Ian Asher",
-      "url": "https://open.spotify.com/artist/5IrxhrMyvZxzgPYrC9j2km"
-    },
-    {
       "name": "J. Cole",
       "url": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
+    },
+    {
+      "name": "Ian Asher",
+      "url": "https://open.spotify.com/artist/5IrxhrMyvZxzgPYrC9j2km"
     }
   ],
-  "currentlyPlaying": null
+  "currentlyPlaying": {
+    "name": "Blame (feat. John Newman)",
+    "artist": "Calvin Harris, John Newman",
+    "url": "https://open.spotify.com/track/07nH4ifBxUB4lZcsf44Brn"
+  }
 }
