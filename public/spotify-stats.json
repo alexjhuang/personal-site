@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-08-17",
-  "listeningTodayMinutes": 0,
+  "updatedAt": "2026-08-18",
+  "listeningTodayMinutes": 45,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 0
+      "energy": 0.78
     },
     {
       "label": "Tue",
-      "energy": 0
+      "energy": 1
     },
     {
       "label": "Wed",
@@ -33,24 +33,24 @@
   ],
   "topTracks": [
     {
-      "name": "Janice STFU",
-      "artist": "Drake",
-      "url": "https://open.spotify.com/track/514joG57v4yKTsfQmz7stz"
-    },
-    {
       "name": "Blame (feat. John Newman)",
       "artist": "Calvin Harris, John Newman",
       "url": "https://open.spotify.com/track/07nH4ifBxUB4lZcsf44Brn"
     },
     {
-      "name": "B's On The Table (feat. 21 Savage)",
-      "artist": "Drake, 21 Savage",
-      "url": "https://open.spotify.com/track/4ygJHbpMGwZknVFaRikdFr"
+      "name": "Janice STFU",
+      "artist": "Drake",
+      "url": "https://open.spotify.com/track/514joG57v4yKTsfQmz7stz"
     },
     {
       "name": "What Did I Miss?",
       "artist": "Drake",
       "url": "https://open.spotify.com/track/7oDbkGSI3IRzKmhrTiQdID"
+    },
+    {
+      "name": "B's On The Table (feat. 21 Savage)",
+      "artist": "Drake, 21 Savage",
+      "url": "https://open.spotify.com/track/4ygJHbpMGwZknVFaRikdFr"
     },
     {
       "name": "Take Me (To The Moon)",
