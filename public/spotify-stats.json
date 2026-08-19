@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-08-18",
-  "listeningTodayMinutes": 45,
+  "updatedAt": "2026-08-19",
+  "listeningTodayMinutes": 37,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 0.78
+      "energy": 0.41
     },
     {
       "label": "Tue",
@@ -12,7 +12,7 @@
     },
     {
       "label": "Wed",
-      "energy": 0
+      "energy": 0.29
     },
     {
       "label": "Thu",
@@ -64,12 +64,12 @@
       "url": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
     },
     {
-      "name": "John Summit",
-      "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
-    },
-    {
       "name": "J. Cole",
       "url": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
+    },
+    {
+      "name": "John Summit",
+      "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
     },
     {
       "name": "Ian Asher",
@@ -80,5 +80,9 @@
       "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
     }
   ],
-  "currentlyPlaying": null
+  "currentlyPlaying": {
+    "name": "Starboy",
+    "artist": "The Weeknd, Daft Punk",
+    "url": "https://open.spotify.com/track/7MXVkk9YMctZqd1Srtv4MB"
+  }
 }
