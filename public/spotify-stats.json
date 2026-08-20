@@ -1,22 +1,22 @@
 {
-  "updatedAt": "2026-08-19",
-  "listeningTodayMinutes": 37,
+  "updatedAt": "2026-08-20",
+  "listeningTodayMinutes": 109,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 0.41
+      "energy": 0
     },
     {
       "label": "Tue",
-      "energy": 1
+      "energy": 0.46
     },
     {
       "label": "Wed",
-      "energy": 0.29
+      "energy": 1
     },
     {
       "label": "Thu",
-      "energy": 0
+      "energy": 0.46
     },
     {
       "label": "Fri",
@@ -80,9 +80,5 @@
       "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
     }
   ],
-  "currentlyPlaying": {
-    "name": "Starboy",
-    "artist": "The Weeknd, Daft Punk",
-    "url": "https://open.spotify.com/track/7MXVkk9YMctZqd1Srtv4MB"
-  }
+  "currentlyPlaying": null
 }
