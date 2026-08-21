@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-20",
-  "listeningTodayMinutes": 109,
+  "updatedAt": "2026-08-21",
+  "listeningTodayMinutes": 116,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -8,19 +8,19 @@
     },
     {
       "label": "Tue",
-      "energy": 0.46
+      "energy": 0
     },
     {
       "label": "Wed",
-      "energy": 1
+      "energy": 0.05
     },
     {
       "label": "Thu",
-      "energy": 0.46
+      "energy": 1
     },
     {
       "label": "Fri",
-      "energy": 0
+      "energy": 0.09
     },
     {
       "label": "Sat",
@@ -43,14 +43,14 @@
       "url": "https://open.spotify.com/track/514joG57v4yKTsfQmz7stz"
     },
     {
-      "name": "What Did I Miss?",
-      "artist": "Drake",
-      "url": "https://open.spotify.com/track/7oDbkGSI3IRzKmhrTiQdID"
-    },
-    {
       "name": "B's On The Table (feat. 21 Savage)",
       "artist": "Drake, 21 Savage",
       "url": "https://open.spotify.com/track/4ygJHbpMGwZknVFaRikdFr"
+    },
+    {
+      "name": "What Did I Miss?",
+      "artist": "Drake",
+      "url": "https://open.spotify.com/track/7oDbkGSI3IRzKmhrTiQdID"
     },
     {
       "name": "Take Me (To The Moon)",
