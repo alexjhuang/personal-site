@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-08-24",
-  "listeningTodayMinutes": 159,
+  "updatedAt": "2026-08-25",
+  "listeningTodayMinutes": 102,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 0
+      "energy": 1
     },
     {
       "label": "Tue",
-      "energy": 0
+      "energy": 0.59
     },
     {
       "label": "Wed",
@@ -64,12 +64,12 @@
       "url": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
     },
     {
-      "name": "J. Cole",
-      "url": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
-    },
-    {
       "name": "John Summit",
       "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
+    },
+    {
+      "name": "J. Cole",
+      "url": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
     },
     {
       "name": "Ian Asher",
