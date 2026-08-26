@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-08-25",
-  "listeningTodayMinutes": 102,
+  "updatedAt": "2026-08-26",
+  "listeningTodayMinutes": 56,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 1
+      "energy": 0.94
     },
     {
       "label": "Tue",
-      "energy": 0.59
+      "energy": 1
     },
     {
       "label": "Wed",
-      "energy": 0
+      "energy": 0.5
     },
     {
       "label": "Thu",
@@ -38,6 +38,11 @@
       "url": "https://open.spotify.com/track/07nH4ifBxUB4lZcsf44Brn"
     },
     {
+      "name": "Take Me (To The Moon)",
+      "artist": "Ian Asher, D A N N Y",
+      "url": "https://open.spotify.com/track/79BY6QNQu7FeL6DnaKu5wT"
+    },
+    {
       "name": "B's On The Table (feat. 21 Savage)",
       "artist": "Drake, 21 Savage",
       "url": "https://open.spotify.com/track/4ygJHbpMGwZknVFaRikdFr"
@@ -46,11 +51,6 @@
       "name": "What Did I Miss?",
       "artist": "Drake",
       "url": "https://open.spotify.com/track/7oDbkGSI3IRzKmhrTiQdID"
-    },
-    {
-      "name": "Take Me (To The Moon)",
-      "artist": "Ian Asher, D A N N Y",
-      "url": "https://open.spotify.com/track/79BY6QNQu7FeL6DnaKu5wT"
     },
     {
       "name": "Janice STFU",
