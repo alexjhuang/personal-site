@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-28",
-  "listeningTodayMinutes": 21,
+  "updatedAt": "2026-08-29",
+  "listeningTodayMinutes": 24,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -8,11 +8,11 @@
     },
     {
       "label": "Tue",
-      "energy": 0.15
+      "energy": 0
     },
     {
       "label": "Wed",
-      "energy": 0.73
+      "energy": 0.69
     },
     {
       "label": "Thu",
@@ -20,11 +20,11 @@
     },
     {
       "label": "Fri",
-      "energy": 0.04
+      "energy": 0.12
     },
     {
       "label": "Sat",
-      "energy": 0
+      "energy": 0.12
     },
     {
       "label": "Sun",
@@ -53,9 +53,9 @@
       "url": "https://open.spotify.com/track/7oDbkGSI3IRzKmhrTiQdID"
     },
     {
-      "name": "Janice STFU",
-      "artist": "Drake",
-      "url": "https://open.spotify.com/track/514joG57v4yKTsfQmz7stz"
+      "name": "You Give Me A Feeling",
+      "artist": "Vintage Culture, James Hype",
+      "url": "https://open.spotify.com/track/2qRKTg13LJGHO4fmQTWT7x"
     }
   ],
   "topArtists": [
