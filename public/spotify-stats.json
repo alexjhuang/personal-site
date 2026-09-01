@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-31",
-  "listeningTodayMinutes": 95,
+  "updatedAt": "2026-09-01",
+  "listeningTodayMinutes": 122,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -8,7 +8,7 @@
     },
     {
       "label": "Tue",
-      "energy": 0
+      "energy": 0.4
     },
     {
       "label": "Wed",
@@ -48,14 +48,14 @@
       "url": "https://open.spotify.com/track/7oDbkGSI3IRzKmhrTiQdID"
     },
     {
-      "name": "Take Me (To The Moon)",
-      "artist": "Ian Asher, D A N N Y",
-      "url": "https://open.spotify.com/track/79BY6QNQu7FeL6DnaKu5wT"
-    },
-    {
       "name": "You Give Me A Feeling",
       "artist": "Vintage Culture, James Hype",
       "url": "https://open.spotify.com/track/2qRKTg13LJGHO4fmQTWT7x"
+    },
+    {
+      "name": "Take Me (To The Moon)",
+      "artist": "Ian Asher, D A N N Y",
+      "url": "https://open.spotify.com/track/79BY6QNQu7FeL6DnaKu5wT"
     }
   ],
   "topArtists": [
@@ -64,20 +64,20 @@
       "url": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
     },
     {
-      "name": "John Summit",
-      "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
-    },
-    {
       "name": "J. Cole",
       "url": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
     },
     {
-      "name": "Ian Asher",
-      "url": "https://open.spotify.com/artist/5IrxhrMyvZxzgPYrC9j2km"
+      "name": "Don Toliver",
+      "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
     },
     {
-      "name": "Fred again..",
-      "url": "https://open.spotify.com/artist/4oLeXFyACqeem2VImYeBFe"
+      "name": "John Summit",
+      "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
+    },
+    {
+      "name": "Ian Asher",
+      "url": "https://open.spotify.com/artist/5IrxhrMyvZxzgPYrC9j2km"
     }
   ],
   "currentlyPlaying": null
