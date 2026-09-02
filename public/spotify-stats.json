@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-09-01",
-  "listeningTodayMinutes": 122,
+  "updatedAt": "2026-09-02",
+  "listeningTodayMinutes": 55,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 1
+      "energy": 0.78
     },
     {
       "label": "Tue",
-      "energy": 0.4
+      "energy": 1
     },
     {
       "label": "Wed",
-      "energy": 0
+      "energy": 0.39
     },
     {
       "label": "Thu",
@@ -64,12 +64,12 @@
       "url": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
     },
     {
-      "name": "J. Cole",
-      "url": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
-    },
-    {
       "name": "Don Toliver",
       "url": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
+    },
+    {
+      "name": "J. Cole",
+      "url": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
     },
     {
       "name": "John Summit",
