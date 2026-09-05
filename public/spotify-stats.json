@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-04",
-  "listeningTodayMinutes": 83,
+  "updatedAt": "2026-09-05",
+  "listeningTodayMinutes": 100,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -12,19 +12,19 @@
     },
     {
       "label": "Wed",
-      "energy": 0.03
+      "energy": 0
     },
     {
       "label": "Thu",
-      "energy": 1
+      "energy": 0.15
     },
     {
       "label": "Fri",
-      "energy": 0.44
+      "energy": 1
     },
     {
       "label": "Sat",
-      "energy": 0
+      "energy": 0.7
     },
     {
       "label": "Sun",
@@ -80,9 +80,5 @@
       "url": "https://open.spotify.com/artist/5IrxhrMyvZxzgPYrC9j2km"
     }
   ],
-  "currentlyPlaying": {
-    "name": "YUKON (INTERLUDE)",
-    "artist": "Joji",
-    "url": "https://open.spotify.com/track/01iMj24ADbxjoOob3TBJfq"
-  }
+  "currentlyPlaying": null
 }
