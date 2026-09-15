@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-14",
-  "listeningTodayMinutes": 146,
+  "updatedAt": "2026-09-15",
+  "listeningTodayMinutes": 9,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -8,7 +8,7 @@
     },
     {
       "label": "Tue",
-      "energy": 0
+      "energy": 0.17
     },
     {
       "label": "Wed",
@@ -33,19 +33,14 @@
   ],
   "topTracks": [
     {
-      "name": "Janice STFU - Afro House",
-      "artist": "AFRO",
-      "url": "https://open.spotify.com/track/1lZEcKAm9w2cpBejNlOPPN"
-    },
-    {
       "name": "Blame (feat. John Newman)",
       "artist": "Calvin Harris, John Newman",
       "url": "https://open.spotify.com/track/07nH4ifBxUB4lZcsf44Brn"
     },
     {
-      "name": "What Did I Miss?",
-      "artist": "Drake",
-      "url": "https://open.spotify.com/track/7oDbkGSI3IRzKmhrTiQdID"
+      "name": "Janice STFU - Afro House",
+      "artist": "AFRO",
+      "url": "https://open.spotify.com/track/1lZEcKAm9w2cpBejNlOPPN"
     },
     {
       "name": "B's On The Table (feat. 21 Savage)",
@@ -53,9 +48,14 @@
       "url": "https://open.spotify.com/track/4ygJHbpMGwZknVFaRikdFr"
     },
     {
-      "name": "You Give Me A Feeling",
-      "artist": "Vintage Culture, James Hype",
-      "url": "https://open.spotify.com/track/2qRKTg13LJGHO4fmQTWT7x"
+      "name": "What Did I Miss?",
+      "artist": "Drake",
+      "url": "https://open.spotify.com/track/7oDbkGSI3IRzKmhrTiQdID"
+    },
+    {
+      "name": "2TONE",
+      "artist": "Yeat, Don Toliver",
+      "url": "https://open.spotify.com/track/5SaKYcCTEdCkacDamzfRfX"
     }
   ],
   "topArtists": [
