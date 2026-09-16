@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-15",
-  "listeningTodayMinutes": 9,
+  "updatedAt": "2026-09-16",
+  "listeningTodayMinutes": 29,
   "weeklyEnergy": [
     {
       "label": "Mon",
@@ -8,11 +8,11 @@
     },
     {
       "label": "Tue",
-      "energy": 0.17
+      "energy": 0.5
     },
     {
       "label": "Wed",
-      "energy": 0
+      "energy": 0.22
     },
     {
       "label": "Thu",
@@ -38,6 +38,11 @@
       "url": "https://open.spotify.com/track/07nH4ifBxUB4lZcsf44Brn"
     },
     {
+      "name": "Janice STFU - House",
+      "artist": "Bulé",
+      "url": "https://open.spotify.com/track/6edYAdj316DlS6KY5ARcsf"
+    },
+    {
       "name": "Janice STFU - Afro House",
       "artist": "AFRO",
       "url": "https://open.spotify.com/track/1lZEcKAm9w2cpBejNlOPPN"
@@ -51,11 +56,6 @@
       "name": "What Did I Miss?",
       "artist": "Drake",
       "url": "https://open.spotify.com/track/7oDbkGSI3IRzKmhrTiQdID"
-    },
-    {
-      "name": "2TONE",
-      "artist": "Yeat, Don Toliver",
-      "url": "https://open.spotify.com/track/5SaKYcCTEdCkacDamzfRfX"
     }
   ],
   "topArtists": [
@@ -76,8 +76,8 @@
       "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
     },
     {
-      "name": "J. Cole",
-      "url": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
+      "name": "Post Malone",
+      "url": "https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60"
     }
   ],
   "currentlyPlaying": null
