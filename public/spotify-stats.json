@@ -1,22 +1,22 @@
 {
-  "updatedAt": "2026-09-16",
-  "listeningTodayMinutes": 29,
+  "updatedAt": "2026-09-17",
+  "listeningTodayMinutes": 83,
   "weeklyEnergy": [
     {
       "label": "Mon",
-      "energy": 1
+      "energy": 0.63
     },
     {
       "label": "Tue",
-      "energy": 0.5
+      "energy": 0.47
     },
     {
       "label": "Wed",
-      "energy": 0.22
+      "energy": 1
     },
     {
       "label": "Thu",
-      "energy": 0
+      "energy": 0.53
     },
     {
       "label": "Fri",
@@ -33,24 +33,24 @@
   ],
   "topTracks": [
     {
-      "name": "Blame (feat. John Newman)",
-      "artist": "Calvin Harris, John Newman",
-      "url": "https://open.spotify.com/track/07nH4ifBxUB4lZcsf44Brn"
-    },
-    {
       "name": "Janice STFU - House",
       "artist": "Bulé",
       "url": "https://open.spotify.com/track/6edYAdj316DlS6KY5ARcsf"
     },
     {
-      "name": "Janice STFU - Afro House",
-      "artist": "AFRO",
-      "url": "https://open.spotify.com/track/1lZEcKAm9w2cpBejNlOPPN"
+      "name": "Blame (feat. John Newman)",
+      "artist": "Calvin Harris, John Newman",
+      "url": "https://open.spotify.com/track/07nH4ifBxUB4lZcsf44Brn"
     },
     {
       "name": "B's On The Table (feat. 21 Savage)",
       "artist": "Drake, 21 Savage",
       "url": "https://open.spotify.com/track/4ygJHbpMGwZknVFaRikdFr"
+    },
+    {
+      "name": "Janice STFU - Afro House",
+      "artist": "AFRO",
+      "url": "https://open.spotify.com/track/1lZEcKAm9w2cpBejNlOPPN"
     },
     {
       "name": "What Did I Miss?",
