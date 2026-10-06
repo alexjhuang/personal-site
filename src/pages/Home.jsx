@@ -402,14 +402,11 @@ function Home() {
           <div className="flex flex-col gap-4">
             <div className="aspect-[4/5] w-full overflow-hidden rounded-[32px] border border-fog/15 bg-fog/5">
               <img
-                src="/artifacts/IMG_1273.jpeg"
+                src="/artifacts/processed_full_body.png"
                 alt="Alex Huang portrait"
                 className="h-full w-full object-cover object-[center_0%]"
               />
             </div>
-            <p className="text-xs uppercase tracking-[0.35em] text-fog/40">
-              Versailles, FRA
-            </p>
           </div>
         </div>
       </section>
