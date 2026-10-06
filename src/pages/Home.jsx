@@ -16,8 +16,8 @@ const experiences = [
     src: "/artifacts/annapurna-labs-squarelogo-1582700117666.jpg",
     bullets: [
       "Architected core compiler algorithms for allocation, dependency analysis, and instruction scheduling on Trainium accelerators.",
-      "Led compiler correctness efforts across scheduling and dependency analysis, diagnosing and resolving miscompilations involving multi-core synchronization and memory ordering.",
       "Owned the NKI compiler's instruction scheduler for Trainium and drove performance improvements across production LLM kernels through kernel profiling and targeted scheduling heuristics.",
+      "Led compiler correctness efforts across scheduling and dependency analysis, diagnosing and resolving miscompilations involving multi-core synchronization and memory ordering.",
     ],
   },
   {
