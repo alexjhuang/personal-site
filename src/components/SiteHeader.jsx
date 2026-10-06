@@ -1,3 +1,5 @@
+import { showSpotify } from "../lib/features.js";
+
 function SiteHeader() {
   return (
     <header className="relative z-10 mx-auto flex w-full max-w-7xl items-center justify-between px-8 pb-6 pt-8">
@@ -14,11 +16,11 @@ function SiteHeader() {
         <a className="transition hover:text-ember" href="/#blogs">
           Blogs
         </a>
-        <a className="spotify-nav" href="/#spotify" aria-label="Spotify">
+        {showSpotify && <a className="spotify-nav" href="/#spotify" aria-label="Spotify">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.6 14.7c-.2.3-.6.4-.9.2-2.5-1.5-5.6-1.9-9.4-1.1-.3.1-.7-.2-.7-.5s.2-.7.5-.7c4.1-.8 7.6-.4 10.4 1.3.3.2.4.6.1.8zm1.3-3c-.2.3-.6.5-1 .3-2.9-1.8-7.4-2.4-10.8-1.3-.4.1-.8-.1-.9-.5-.1-.4.1-.8.5-.9 3.9-1.2 8.8-.6 12.1 1.5.3.2.5.6.3.9zm.1-3.2c-3.4-2-9-2.2-12.3-1.2-.4.1-.9-.1-1-.5-.1-.4.1-.9.5-1 3.8-1.2 9.9-1 13.8 1.4.4.2.5.7.3 1.1-.2.4-.7.5-1.1.2z" />
           </svg>
-        </a>
+        </a>}
       </nav>
       <div className="flex items-center gap-6 text-fog/70">
         <a

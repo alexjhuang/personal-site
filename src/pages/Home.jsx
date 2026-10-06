@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import SiteFooter from "../components/SiteFooter.jsx";
 import SiteHeader from "../components/SiteHeader.jsx";
 import { blogs } from "../lib/blogs.js";
+import { showSpotify } from "../lib/features.js";
 
 const heroText = "ML Systems";
 const heroWords = heroText.split(" ");
@@ -201,6 +202,7 @@ function Home() {
   }, []);
 
   useEffect(() => {
+    if (!showSpotify) return;
     fetch("/spotify-stats.json")
       .then((response) => response.json())
       .then((data) => setSpotifyData({ ...defaultSpotifyData, ...data }))
@@ -651,7 +653,7 @@ function Home() {
         </div>
       </section>
 
-      <section
+      {showSpotify && <section
         id="spotify"
         className="mx-auto w-full max-w-6xl px-8 pb-36 text-left reveal"
         data-reveal
@@ -730,7 +732,7 @@ function Home() {
             </p>
           </div>
         </div>
-      </section>
+      </section>}
 
       <SiteFooter />
     </div>
