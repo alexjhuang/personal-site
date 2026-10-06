@@ -9,13 +9,25 @@ const heroWords = heroText.split(" ");
 
 const experiences = [
   {
-    company: "Annapurna Labs (AWS)",
-    title: "Compiler Engineer Intern — Neuron Kernel Interface",
+    company: "Annapurna Labs",
+    title: "ML Compiler Engineer",
+    dates: "Aug 2026 — Present",
+    logo: "image",
+    src: "/artifacts/annapurna-labs-squarelogo-1582700117666.jpg",
+    bullets: [
+      "Architected core compiler algorithms for allocation, dependency analysis, and instruction scheduling on Trainium accelerators.",
+      "Led compiler correctness efforts across scheduling and dependency analysis, diagnosing and resolving miscompilations involving multi-core synchronization and memory ordering.",
+      "Owned the NKI compiler's instruction scheduler for Trainium and drove performance improvements across production LLM kernels through kernel profiling and targeted scheduling heuristics.",
+    ],
+  },
+  {
+    company: "Annapurna Labs",
+    title: "ML Compiler Engineer Intern — Neuron Kernel Interface",
     dates: "Oct 2025 — Jan 2026",
     logo: "image",
     src: "/artifacts/annapurna-labs-squarelogo-1582700117666.jpg",
     bullets: [
-      "Founding contributor to the NKI compiler backend — a Triton-like kernel DSL for Trainium/Inferentia.",
+      "Founding engineer for the NKI compiler backend — a Triton-like kernel DSL for Trainium/Inferentia.",
       "Optimized MatMul and FlashAttention kernels with DMA prefetching and software pipelining.",
       "Tuned tile sizes and buffering to reach >85% HFU utilization across 1K–8K shapes.",
       "Designed compiler passes for loop scheduling and allocation in MLIR/NISA dialects.",
