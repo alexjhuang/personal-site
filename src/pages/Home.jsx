@@ -329,7 +329,7 @@ function Home() {
               className="text-base uppercase tracking-[0.32em] text-fog/60 motion-safe:animate-rise"
               style={{ animationDelay: "220ms" }}
             >
-              Clusters · Kernels · Backend Infra
+              Compilers · Kernels · Clusters
             </p>
           </div>
         </main>
