@@ -6,7 +6,12 @@ const outputPath = path.join(process.cwd(), "public", "last-updated.json");
 let date = "";
 
 try {
-  date = execSync("git log -1 --format=%cs").toString().trim();
+  // Skip bot-generated data files so nightly metrics/Spotify commits don't count as updates.
+  date = execSync(
+    "git log -1 --format=%cs -- . ':!public/blog-metrics.json' ':!public/spotify-stats.json' ':!public/last-updated.json'",
+  )
+    .toString()
+    .trim();
 } catch {
   date = new Date().toISOString().slice(0, 10);
 }
