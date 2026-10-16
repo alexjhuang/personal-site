@@ -88,7 +88,7 @@ const educationItems = [
   {
     school: "University of Virginia",
     title: "B.S. Computer Science & Mathematics",
-    dates: "Aug 2022 - May 2026",
+    dates: "Aug 2022 — May 2026",
     logo: "image",
     src: "/artifacts/UVA-Logo.svg",
     csCourses: [
@@ -452,7 +452,10 @@ function Home() {
                       <p className="experience-title">{experience.title}</p>
                       <p className="experience-company">{experience.company}</p>
                     </div>
-                    <span className="experience-plus">+</span>
+                    <div className="experience-meta">
+                      <span className="experience-date">{experience.dates}</span>
+                      <span className="experience-plus">+</span>
+                    </div>
                   </div>
                   <div className="experience-details">
                     <ul>
@@ -460,7 +463,6 @@ function Home() {
                         <li key={bullet}>{bullet}</li>
                       ))}
                     </ul>
-                    <span className="experience-date">{experience.dates}</span>
                   </div>
                 </div>
               </div>
@@ -497,7 +499,10 @@ function Home() {
                         <p className="experience-title">{item.school}</p>
                         <p className="experience-company">{item.title}</p>
                       </div>
-                      <span className="experience-plus">+</span>
+                      <div className="experience-meta">
+                        <span className="experience-date">{item.dates}</span>
+                        <span className="experience-plus">+</span>
+                      </div>
                     </div>
                     <div className="experience-details">
                       {item.csCourses && item.mathCourses ? (
@@ -540,7 +545,6 @@ function Home() {
                           ))}
                         </ul>
                       )}
-                      <span className="experience-date">{item.dates}</span>
                     </div>
                   </div>
                 </div>

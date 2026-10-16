@@ -259,11 +259,17 @@ html {
 }
 
 .experience-date {
-  align-self: flex-end;
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.18em;
   color: rgba(241, 242, 246, 0.45);
+}
+
+.experience-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  white-space: nowrap;
 }
 
 .experience-row:hover .experience-details {
@@ -287,6 +293,16 @@ html {
   .experience-icon {
     height: 3.75rem;
     width: 3.75rem;
+  }
+
+  .experience-header {
+    flex-wrap: wrap;
+  }
+
+  .experience-meta {
+    margin-left: auto;
+    white-space: normal;
+    text-align: right;
   }
 }
 
