@@ -1,8 +1,6 @@
-import { useEffect, useMemo, useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import SiteFooter from "../components/SiteFooter.jsx";
 import SiteHeader from "../components/SiteHeader.jsx";
-import { blogs } from "../lib/blogs.js";
 import { showSpotify } from "../lib/features.js";
 
 const heroText = "ML Systems";
@@ -166,10 +164,6 @@ function getTodayLabel() {
 
 function Home() {
   const [glow, setGlow] = useState({ x: 50, y: 50 });
-  const [showMoreBlogs, setShowMoreBlogs] = useState(false);
-  const [activeTag, setActiveTag] = useState("All");
-  const [sortOrder, setSortOrder] = useState("latest");
-  const [metrics, setMetrics] = useState({ views: {} });
   const [spotifyActive, setSpotifyActive] = useState(true);
   const [spotifyData, setSpotifyData] = useState(defaultSpotifyData);
 
@@ -192,13 +186,6 @@ function Home() {
         window.cancelAnimationFrame(frame);
       }
     };
-  }, []);
-
-  useEffect(() => {
-    fetch("/blog-metrics.json")
-      .then((response) => response.json())
-      .then((data) => setMetrics(data))
-      .catch(() => setMetrics({ views: {} }));
   }, []);
 
   useEffect(() => {
@@ -240,49 +227,6 @@ function Home() {
     observer.observe(spotifySection);
     return () => observer.disconnect();
   }, []);
-
-  const blogsWithViews = useMemo(
-    () =>
-      blogs.map((blog) => ({
-        ...blog,
-        views: metrics.views?.[blog.slug] ?? 0,
-      })),
-    [metrics]
-  );
-
-  const featuredBlogs = useMemo(() => {
-    const sorted = [...blogsWithViews].sort((a, b) => {
-      if (b.views !== a.views) return b.views - a.views;
-      return new Date(b.date) - new Date(a.date);
-    });
-    return sorted.slice(0, 3);
-  }, [blogsWithViews]);
-
-  const remainingBlogs = useMemo(() => {
-    const featuredSlugs = new Set(featuredBlogs.map((blog) => blog.slug));
-    return blogsWithViews.filter((blog) => !featuredSlugs.has(blog.slug));
-  }, [blogsWithViews, featuredBlogs]);
-
-  const blogTags = useMemo(() => {
-    return [
-      "All",
-      ...new Set(remainingBlogs.flatMap((blog) => blog.tags ?? [])),
-    ];
-  }, [remainingBlogs]);
-
-  const filteredMoreBlogs = useMemo(() => {
-    return remainingBlogs
-      .filter((blog) => activeTag === "All" || blog.tags?.includes(activeTag))
-      .sort((a, b) => {
-        if (sortOrder === "latest") {
-          return new Date(b.date) - new Date(a.date);
-        }
-        if (sortOrder === "oldest") {
-          return new Date(a.date) - new Date(b.date);
-        }
-        return 0;
-      });
-  }, [remainingBlogs, activeTag, sortOrder]);
 
   const spotifyWave = spotifyData.weeklyEnergy?.length
     ? spotifyData.weeklyEnergy
@@ -555,105 +499,33 @@ function Home() {
       </section>
 
       <section
-        id="blogs"
+        id="substack"
         className="mx-auto w-full max-w-6xl px-8 pb-32 text-left reveal"
         data-reveal
       >
         <div className="space-y-6">
-          <p className="section-header text-fog/60">Blogs</p>
-          {blogsWithViews.length === 0 ? (
-            <p className="text-lg text-fog/60">Coming soon.</p>
-          ) : (
-            <>
-              <div className="space-y-5">
-                {featuredBlogs.map((blog) => (
-                  <Link
-                    key={blog.slug}
-                    className="blog-banner"
-                    style={{ backgroundImage: `url(${blog.cover})` }}
-                    to={`/blog/${blog.slug}`}
-                  >
-                    <div className="blog-overlay" />
-                    <div className="blog-content">
-                      <h3>{blog.title}</h3>
-                      <div className="blog-tags">
-                        {blog.tags.map((tag) => (
-                          <span key={tag}>{tag}</span>
-                        ))}
-                      </div>
-                    </div>
-                    <span className="blog-fire" aria-hidden="true">
-                      🔥
-                    </span>
-                  </Link>
-                ))}
+          <p className="section-header text-fog/60">Writing</p>
+          <a
+            className="blog-banner"
+            style={{
+              background:
+                "linear-gradient(120deg, rgba(255, 103, 25, 0.55), rgba(20, 20, 24, 0.9))",
+            }}
+            href="https://substack.com/@alexjhuang"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="blog-content">
+              <h3>I now write on Substack</h3>
+              <div className="blog-tags">
+                <span>Essays</span>
+                <span>Notes</span>
               </div>
-              {remainingBlogs.length > 0 && (
-                <>
-                  <button
-                    className="blog-toggle"
-                    type="button"
-                    onClick={() => setShowMoreBlogs((prev) => !prev)}
-                  >
-                    {showMoreBlogs ? "Show less" : "Show more"}
-                  </button>
-                  {showMoreBlogs && (
-                    <div className="space-y-6">
-                      <div className="blog-controls">
-                        <div className="blog-filters">
-                          {blogTags.map((tag) => (
-                            <button
-                              key={tag}
-                              type="button"
-                              className={`blog-filter ${
-                                activeTag === tag ? "is-active" : ""
-                              }`}
-                              onClick={() => setActiveTag(tag)}
-                            >
-                              {tag}
-                            </button>
-                          ))}
-                        </div>
-                        <div className="blog-sort">
-                          <label htmlFor="blog-sort">Sort</label>
-                          <select
-                            id="blog-sort"
-                            value={sortOrder}
-                            onChange={(event) =>
-                              setSortOrder(event.target.value)
-                            }
-                          >
-                            <option value="latest">Latest</option>
-                            <option value="oldest">Oldest</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div className="space-y-5">
-                        {filteredMoreBlogs.map((blog) => (
-                          <Link
-                            key={blog.slug}
-                            className="blog-banner blog-banner--alt"
-                            style={{ backgroundImage: `url(${blog.cover})` }}
-                            to={`/blog/${blog.slug}`}
-                          >
-                            <div className="blog-overlay" />
-                            <div className="blog-content">
-                              <h3>{blog.title}</h3>
-                              <div className="blog-tags">
-                                {blog.tags.map((tag) => (
-                                  <span key={tag}>{tag}</span>
-                                ))}
-                              </div>
-                            </div>
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </>
-              )}
-            </>
-          )}
+            </div>
+            <span className="blog-fire" aria-hidden="true">
+              →
+            </span>
+          </a>
         </div>
       </section>
 

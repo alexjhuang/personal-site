@@ -13,8 +13,8 @@ function SiteHeader() {
         <a className="transition hover:text-ember" href="/#experience">
           Experience
         </a>
-        <a className="transition hover:text-ember" href="/#blogs">
-          Blogs
+        <a className="transition hover:text-ember" href="/#substack">
+          Writing
         </a>
         {showSpotify && <a className="spotify-nav" href="/#spotify" aria-label="Spotify">
           <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -49,6 +49,20 @@ function SiteHeader() {
             aria-hidden="true"
           >
             <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 8.98h3.96V21H3V8.98zM9.5 8.98H13v1.64h.05c.49-.92 1.7-1.89 3.5-1.89 3.75 0 4.45 2.47 4.45 5.68V21H17v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9.5V8.98z" />
+          </svg>
+        </a>
+        <a
+          className="transition hover:text-ember"
+          href="https://substack.com/@alexjhuang"
+          aria-label="Substack"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            className="h-6 w-6"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path d="M22.54 8.24H1.46V5.41h21.08v2.83zM1.46 10.81V24L12 18.11 22.54 24V10.81H1.46zM22.54 0H1.46v2.84h21.08V0z" />
           </svg>
         </a>
         <a
