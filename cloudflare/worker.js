@@ -91,6 +91,18 @@ export default {
       return Response.json({ views }, { headers: corsHeaders });
     }
 
+    // Substack blocks GitHub Actions runner IPs; the nightly job pulls the feed through here instead.
+    if (url.pathname === "/api/substack") {
+      const upstream = await fetch(
+        "https://alexjhuang.substack.com/api/v1/posts?limit=50",
+        { headers: { "User-Agent": "Mozilla/5.0 (compatible; alexjhuang.com feed sync)" } }
+      );
+      return new Response(upstream.body, {
+        status: upstream.status,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
     return new Response("Not found", { status: 404, headers: corsHeaders });
   },
 };

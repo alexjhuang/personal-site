@@ -1,6 +1,10 @@
 import fs from "node:fs";
 
 const SITE = "https://alexjhuang.substack.com";
+// Cloudflare worker (cloudflare/worker.js) that proxies the posts API; GitHub runner IPs get 403 from Substack directly.
+const PROXY =
+  process.env.SUBSTACK_PROXY_URL ||
+  "https://floral-water-0f68.alexjinghuang.workers.dev/api/substack";
 const OUT = "public/substack.json";
 // Substack's edge 403s bare bot user agents from some hosting ranges.
 const HEADERS = {
@@ -17,9 +21,9 @@ const decode = (s) =>
     .replace(/&gt;/g, ">")
     .replace(/&quot;/g, '"');
 
-async function fromApi() {
-  const res = await fetch(`${SITE}/api/v1/posts?limit=50`, { headers: HEADERS });
-  if (!res.ok) throw new Error(`api ${res.status}`);
+async function fromApi(url) {
+  const res = await fetch(url, { headers: HEADERS });
+  if (!res.ok) throw new Error(`${url} ${res.status}`);
   const data = await res.json();
   return (Array.isArray(data) ? data : data.posts)
     .filter((p) => p.is_published !== false)
@@ -52,13 +56,21 @@ async function fromRss() {
   }));
 }
 
+const sources = [
+  () => fromApi(PROXY),
+  () => fromApi(`${SITE}/api/v1/posts?limit=50`),
+  fromRss,
+];
 let posts;
-try {
-  posts = await fromApi();
-} catch (apiErr) {
-  console.warn(`API failed (${apiErr.message}); trying RSS`);
-  posts = await fromRss();
+for (const source of sources) {
+  try {
+    posts = await source();
+    break;
+  } catch (err) {
+    console.warn(`Source failed: ${err.message}`);
+  }
 }
+if (!posts) throw new Error("All Substack sources failed");
 
 if (posts.length === 0) throw new Error("Parsed zero posts; feed shape changed?");
 fs.writeFileSync(OUT, JSON.stringify(posts, null, 2) + "\n");
