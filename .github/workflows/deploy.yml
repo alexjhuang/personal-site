@@ -8,6 +8,7 @@ on:
     workflows:
       - Update Spotify stats
       - Update blog metrics
+      - Update Substack posts
     types: [completed]
 
 permissions:

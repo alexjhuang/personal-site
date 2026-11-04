@@ -165,6 +165,7 @@ function getTodayLabel() {
 function Home() {
   const [glow, setGlow] = useState({ x: 50, y: 50 });
   const [spotifyActive, setSpotifyActive] = useState(true);
+  const [posts, setPosts] = useState([]);
   const [spotifyData, setSpotifyData] = useState(defaultSpotifyData);
 
   useEffect(() => {
@@ -186,6 +187,13 @@ function Home() {
         window.cancelAnimationFrame(frame);
       }
     };
+  }, []);
+
+  useEffect(() => {
+    fetch("/substack.json")
+      .then((response) => response.json())
+      .then(setPosts)
+      .catch(() => setPosts([]));
   }, []);
 
   useEffect(() => {
@@ -505,26 +513,33 @@ function Home() {
       >
         <div className="space-y-6">
           <p className="section-header text-fog/60">Writing</p>
+          <div className="space-y-5">
+            {posts.map((post) => (
+              <a
+                key={post.link}
+                className="blog-banner"
+                style={{ backgroundImage: `url(${post.cover})` }}
+                href={post.link}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="blog-overlay" />
+                <div className="blog-content">
+                  <h3>{post.title}</h3>
+                  <div className="blog-tags">
+                    <span>{post.date}</span>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
           <a
-            className="blog-banner"
-            style={{
-              background:
-                "linear-gradient(120deg, rgba(255, 103, 25, 0.55), rgba(20, 20, 24, 0.9))",
-            }}
+            className="blog-toggle inline-block"
             href="https://substack.com/@alexjhuang"
             target="_blank"
             rel="noreferrer"
           >
-            <div className="blog-content">
-              <h3>I now write on Substack</h3>
-              <div className="blog-tags">
-                <span>Essays</span>
-                <span>Notes</span>
-              </div>
-            </div>
-            <span className="blog-fire" aria-hidden="true">
-              →
-            </span>
+            All posts on Substack
           </a>
         </div>
       </section>
