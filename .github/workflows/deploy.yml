@@ -17,7 +17,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  # Deploys that will be skipped (upstream job failed) get their own group so they never cancel a real deploy.
+  group: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.conclusion != 'success' && format('skip-{0}', github.run_id) || 'pages' }}
   cancel-in-progress: true
 
 jobs:

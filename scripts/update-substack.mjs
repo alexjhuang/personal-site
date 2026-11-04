@@ -3,7 +3,13 @@ import fs from "node:fs";
 const FEED = "https://alexjhuang.substack.com/feed";
 const OUT = "public/substack.json";
 
-const response = await fetch(FEED);
+// Substack 403s the default Node user agent from GitHub runners
+const response = await fetch(FEED, {
+  headers: {
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36",
+    Accept: "application/rss+xml, application/xml;q=0.9, */*;q=0.8",
+  },
+});
 if (!response.ok) throw new Error(`Failed to fetch feed: ${response.status}`);
 const xml = await response.text();
 
