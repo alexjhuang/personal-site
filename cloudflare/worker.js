@@ -91,15 +91,46 @@ export default {
       return Response.json({ views }, { headers: corsHeaders });
     }
 
-    // Substack blocks GitHub Actions runner IPs; the nightly job pulls the feed through here instead.
+    // Substack rate-limits by end-client IP (Workers forward it), so cache posts in KV for 6h
+    // and serve the last good copy when Substack says no.
     if (url.pathname === "/api/substack") {
+      const cached = await env.BLOG_VIEWS.get("substack:fresh");
+      if (cached) {
+        return new Response(cached, {
+          headers: { ...corsHeaders, "Content-Type": "application/json" },
+        });
+      }
       const upstream = await fetch(
         "https://alexjhuang.substack.com/api/v1/posts?limit=50",
         { headers: { "User-Agent": "Mozilla/5.0 (compatible; alexjhuang.com feed sync)" } }
       );
-      return new Response(upstream.body, {
+      if (upstream.ok) {
+        const data = await upstream.json();
+        const posts = (Array.isArray(data) ? data : data.posts)
+          .filter((p) => p.is_published !== false)
+          .map((p) => ({
+            title: p.title,
+            description: p.subtitle ?? "",
+            link: p.canonical_url,
+            date: p.post_date.slice(0, 10),
+            cover: p.cover_image ?? "",
+          }));
+        const body = JSON.stringify(posts);
+        await env.BLOG_VIEWS.put("substack:fresh", body, { expirationTtl: 6 * 3600 });
+        await env.BLOG_VIEWS.put("substack:last", body);
+        return new Response(body, {
+          headers: { ...corsHeaders, "Content-Type": "application/json" },
+        });
+      }
+      const stale = await env.BLOG_VIEWS.get("substack:last");
+      if (stale) {
+        return new Response(stale, {
+          headers: { ...corsHeaders, "Content-Type": "application/json", "X-Stale": "1" },
+        });
+      }
+      return new Response(`Substack ${upstream.status}`, {
         status: upstream.status,
-        headers: { ...corsHeaders, "Content-Type": "application/json" },
+        headers: corsHeaders,
       });
     }
 

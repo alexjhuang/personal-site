@@ -13,7 +13,7 @@ This worker tracks blog views and exposes a secured stats endpoint for the night
 - `POST /api/unlike?slug=your-slug`
   - Decrements the like counter for a blog post.
 - `GET /api/substack`
-  - Proxies `alexjhuang.substack.com/api/v1/posts` for the nightly Substack sync (GitHub runners are blocked by Substack).
+  - Returns `[{ title, description, link, date, cover }]` from `alexjhuang.substack.com/api/v1/posts`, cached 6h in KV. Used by the site at page load and by the nightly sync.
 - `GET /api/stats?token=YOUR_TOKEN`
   - Returns `{ views: { slug: count } }`.
 

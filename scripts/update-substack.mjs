@@ -25,6 +25,7 @@ async function fromApi(url) {
   const res = await fetch(url, { headers: HEADERS });
   if (!res.ok) throw new Error(`${url} ${res.status}`);
   const data = await res.json();
+  if (Array.isArray(data) && data[0]?.link) return data; // worker already mapped it
   return (Array.isArray(data) ? data : data.posts)
     .filter((p) => p.is_published !== false)
     .map((p) => ({

@@ -190,10 +190,15 @@ function Home() {
   }, []);
 
   useEffect(() => {
+    // Committed snapshot first, then live list from the worker (see cloudflare/worker.js).
     fetch("/substack.json")
       .then((response) => response.json())
       .then(setPosts)
-      .catch(() => setPosts([]));
+      .catch(() => {});
+    fetch("https://floral-water-0f68.alexjinghuang.workers.dev/api/substack")
+      .then((response) => (response.ok ? response.json() : []))
+      .then((live) => live.length && setPosts(live))
+      .catch(() => {});
   }, []);
 
   useEffect(() => {
